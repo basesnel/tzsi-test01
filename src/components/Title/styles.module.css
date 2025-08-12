@@ -1,0 +1,23 @@
+.header {
+  padding-top: 64px;
+}
+
+.title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  flex-grow: 1;
+}
