@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
   font-size: 40px;
   font-weight: 900;
@@ -41,4 +42,15 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.05) 100%
   );
+  cursor: pointer;
+}
+
+.back {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+.amount {
+  text-transform: uppercase;
 }
