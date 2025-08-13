@@ -51,6 +51,42 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.cash {
+  background-image: url(/bgfields/01cashlight.png);
+  background-position: center 100%;
+  background-size: 185% auto;
+  background-repeat: no-repeat;
+}
+
+.double {
+  background-image: url(/bgfields/02x2konfetti.png),
+    url(/bgfields/02x2light.png);
+  background-position: center, center;
+  background-size: 171% auto, 185% auto;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.zero {
+  background-image: url(/bgfields/03zerolight.png);
+  background-position: center;
+  background-size: 185% auto;
+  background-repeat: no-repeat;
+}
+
+.bomb {
+  background-image: url(/bgfields/04bomblight.png);
+  background-position: center;
+  background-size: 185% auto;
+  background-repeat: no-repeat;
+}
+
+.stop {
+  background-image: url(/bgfields/05stoplight.png);
+  background-position: center;
+  background-size: 185% auto;
+  background-repeat: no-repeat;
+}
+
 .amount {
   text-transform: uppercase;
 }

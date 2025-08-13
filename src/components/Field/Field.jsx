@@ -21,15 +21,17 @@ const Field = () => {
           <li key={field.id} className={styles.item}>
             {isOpen ? (
               <div
-                style={{
-                  backgroundImage: `url(${field.bg})`,
-                  backgroundPosition: `${
-                    field.label === "Cash" ? "center 100%" : "center"
-                  }`,
-                  backgroundSize: "185% auto",
-                  backgroundRepeat: "no-repeat",
-                }}
-                className={`${styles.front} ${styles.back}`}
+                // style={{
+                //   backgroundImage: `url(${field.bg}) ${field.bg2 && url()}`,
+                //   backgroundPosition: `${
+                //     field.label === "Cash" ? "center 100%" : "center"
+                //   }`,
+                //   backgroundSize: "185% auto",
+                //   backgroundRepeat: "no-repeat",
+                // }}
+                className={`${styles.front} ${styles.back} ${
+                  styles[field.label]
+                }`}
               >
                 <Image image={field} />
                 {field.amount && (

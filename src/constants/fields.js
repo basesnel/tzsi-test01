@@ -18,7 +18,7 @@ import stopBG from "../assets/fields/05stoplight.png";
 const fields = [
   {
     id: 1,
-    label: "Cash",
+    label: "cash",
     wbp: cashWBP,
     png: cashPNG,
     bg: cashBG,
@@ -28,7 +28,7 @@ const fields = [
   },
   {
     id: 2,
-    label: "Cash",
+    label: "cash",
     wbp: cashWBP,
     png: cashPNG,
     bg: cashBG,
@@ -38,7 +38,7 @@ const fields = [
   },
   {
     id: 3,
-    label: "Cash",
+    label: "cash",
     wbp: cashWBP,
     png: cashPNG,
     bg: cashBG,
@@ -48,7 +48,7 @@ const fields = [
   },
   {
     id: 4,
-    label: "Cash",
+    label: "cash",
     wbp: cashWBP,
     png: cashPNG,
     bg: cashBG,
@@ -58,7 +58,7 @@ const fields = [
   },
   {
     id: 5,
-    label: "Cash",
+    label: "cash",
     wbp: cashWBP,
     png: cashPNG,
     bg: cashBG,
@@ -68,7 +68,7 @@ const fields = [
   },
   {
     id: 6,
-    label: "Double",
+    label: "double",
     wbp: x2WBP,
     png: x2PNG,
     bg: x2BG,
@@ -78,7 +78,7 @@ const fields = [
   },
   {
     id: 7,
-    label: "Zero",
+    label: "zero",
     wbp: zeroWBP,
     png: zeroPNG,
     bg: zeroBG,
@@ -87,16 +87,16 @@ const fields = [
   },
   {
     id: 8,
-    label: "Bomb",
+    label: "bomb",
     wbp: bombWBP,
     png: bombPNG,
     bg: bombBG,
-    width: 72,
-    height: 72,
+    width: 88,
+    height: 88,
   },
   {
     id: 9,
-    label: "Stop",
+    label: "stop",
     wbp: stopWBP,
     png: stopPNG,
     bg: stopBG,
