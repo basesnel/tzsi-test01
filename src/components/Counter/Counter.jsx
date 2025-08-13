@@ -1,4 +1,5 @@
-import Logo from "../Logo/Logo";
+import Image from "../Image/Image";
+import count from "../../constants/count";
 
 import styles from "./styles.module.css";
 
@@ -6,10 +7,10 @@ const Counter = ({ counter }) => {
   return (
     <section className={styles.section}>
       <h2 className={styles.hidden}>reward counter</h2>
-      <p className={styles.counter}>
-        <img src="" alt="" />
+      <div className={styles.counter}>
+        <Image image={count} />
         <span>{counter}</span>
-      </p>
+      </div>
     </section>
   );
 };

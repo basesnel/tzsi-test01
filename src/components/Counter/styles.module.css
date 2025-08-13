@@ -18,6 +18,10 @@
 }
 
 .counter {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
   font-size: 32px;
   font-weight: 900;
 }
