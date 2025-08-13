@@ -8,4 +8,13 @@
     rgba(153.29019165039062, 85.48365020751953, 255, 1),
     rgba(24, 26, 32, 1) 100%
   );
+  background-image: url(/pattern.png),
+    radial-gradient(
+      102% 100% at 50% 0%,
+      rgba(153.29019165039062, 85.48365020751953, 255, 1),
+      rgba(24, 26, 32, 1) 100%
+    );
+  background-size: 444px;
+  background-position: top center;
+  background-repeat: no-repeat;
 }

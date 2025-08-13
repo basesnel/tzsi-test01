@@ -1,0 +1,44 @@
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: calc((100% - 16px) / 3);
+  aspect-ratio: 1 / 1;
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 40px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.4);
+
+  border-radius: 12px;
+
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),
+    0px 4px 8px 0px rgba(24, 26, 32, 0.3);
+  backdrop-filter: blur(16px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
