@@ -3,6 +3,8 @@ import Title from "../Title/Title";
 import Counter from "../Counter/Counter";
 import Field from "../Field/Field";
 import Tips from "../Tips/Tips";
+import Claim from "../Claim/Claim";
+import Footer from "../Footer/Footer";
 
 import styles from "./styles.module.css";
 
@@ -14,6 +16,8 @@ const Game = () => {
       <Counter counter={0} />
       <Field />
       <Tips />
+      <Claim />
+      <Footer />
     </div>
   );
 };
