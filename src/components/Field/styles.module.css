@@ -15,6 +15,7 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .item {
@@ -22,52 +23,170 @@
   aspect-ratio: 1 / 1;
 }
 
-.front {
+.field {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100%;
-  font-size: 40px;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.4);
-
   border-radius: 12px;
-
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),
     0px 4px 8px 0px rgba(24, 26, 32, 0.3);
   backdrop-filter: blur(16px);
+}
+
+.front {
+  font-size: 40px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.4);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.01),
     rgba(255, 255, 255, 0.05) 100%
   );
   cursor: pointer;
 }
 
 .back {
+  position: relative;
+  overflow: hidden;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.cash {
-  background-image: url(/bgfields/01cashlight.png);
+.bgset {
+  z-index: -1;
+}
+
+.cashFirstBG {
+  position: absolute;
+  inset: 0;
+  background: rgba(24, 26, 32, 0.8);
+}
+
+.cashSecondBG {
+  position: absolute;
+  inset: 0;
+  background: rgba(130, 224, 36, 0.1);
+}
+
+.cashThirdBG {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+}
+
+.cashGreenUp {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: rgba(130, 224, 36, 1);
+  filter: blur(35px);
+}
+
+.cashGreenUpYellow {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background: rgba(250, 217, 91, 1);
+  filter: blur(12px);
+}
+
+.cashGreenDown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(130, 224, 36, 1);
+  filter: blur(32px);
+}
+
+.cashLight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -61%);
+  /* bottom: 0; */
+  width: 184%;
+  height: 130%;
+  background: url(/bgfields/01cashlight.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon {
+  transform: translateY(-10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+/* .cash {
+  background-image: url(/bgfields/01cashlight.png),
+    radial-gradient(circle at center, rgba(240, 240, 10, 1) 0%, transparent 70%),
+      radial-gradient(
+        circle at top,
+        rgba(130, 224, 36, 0.8) 10%,
+        transparent 50%
+      ),
+    radial-gradient(
+      ellipse at bottom,
+      rgba(130, 224, 36, 0.2) 10%,
+      transparent 50%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(130, 224, 36, 0.1),
+      rgba(130, 224, 36, 0.1) 100%
+    ),
+    linear-gradient(180deg, rgba(24, 26, 32, 0.8), rgba(24, 26, 32, 0.8) 100%);
   background-position: center 100%;
   background-size: 185% auto;
   background-repeat: no-repeat;
-}
+} */
 
 .double {
   background-image: url(/bgfields/02x2konfetti.png),
-    url(/bgfields/02x2light.png);
+    url(/bgfields/02x2light.png),
+    linear-gradient(
+      180deg,
+      rgba(130, 224, 36, 0.1),
+      rgba(130, 224, 36, 0.1) 100%
+    ),
+    linear-gradient(180deg, rgba(24, 26, 32, 0.8), rgba(24, 26, 32, 0.8) 100%);
   background-position: center, center;
   background-size: 171% auto, 185% auto;
   background-repeat: no-repeat, no-repeat;
 }
 
+.double::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 115, 229, 1);
+  filter: blur(60px);
+}
+
 .zero {
-  background-image: url(/bgfields/03zerolight.png);
+  background-image: url(/bgfields/03zerolight.png),
+    linear-gradient(
+      180deg,
+      rgba(130, 224, 36, 0.1),
+      rgba(130, 224, 36, 0.1) 100%
+    ),
+    linear-gradient(180deg, rgba(24, 26, 32, 0.8), rgba(24, 26, 32, 0.8) 100%);
   background-position: center;
   background-size: 185% auto;
   background-repeat: no-repeat;
@@ -81,7 +200,13 @@
 }
 
 .stop {
-  background-image: url(/bgfields/05stoplight.png);
+  background-image: url(/bgfields/05stoplight.png),
+    linear-gradient(
+      180deg,
+      rgba(130, 224, 36, 0.1),
+      rgba(130, 224, 36, 0.1) 100%
+    ),
+    linear-gradient(180deg, rgba(24, 26, 32, 0.8), rgba(24, 26, 32, 0.8) 100%);
   background-position: center;
   background-size: 185% auto;
   background-repeat: no-repeat;

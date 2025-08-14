@@ -12,36 +12,36 @@ const Field = () => {
     <section>
       <h2 className={styles.hidden}>game field</h2>
       <ul className={styles.list}>
-        {/* {[...Array(9)].map((_, i) => (
-          <li key={i} className={styles.item}>
-            <div className={styles.front}>$</div>
-          </li>
-        ))} */}
         {fields.map((field) => (
           <li key={field.id} className={styles.item}>
             {isOpen ? (
               <div
-                // style={{
-                //   backgroundImage: `url(${field.bg}) ${field.bg2 && url()}`,
-                //   backgroundPosition: `${
-                //     field.label === "Cash" ? "center 100%" : "center"
-                //   }`,
-                //   backgroundSize: "185% auto",
-                //   backgroundRepeat: "no-repeat",
-                // }}
-                className={`${styles.front} ${styles.back} ${
+                className={`${styles.field} ${styles.back} ${
                   styles[field.label]
                 }`}
               >
-                <Image image={field} />
-                {field.amount && (
-                  <span className={styles.amount}>
-                    {formatAmount(field.amount)}
-                  </span>
+                {field.label === "cash" && (
+                  <>
+                    <div className={styles.cashFirstBG} />
+                    <div className={styles.cashLight} />
+                    <div className={styles.cashGreenUp} />
+                    <div className={styles.cashGreenUpYellow} />
+                    <div className={styles.cashGreenDown} />
+                    <div className={styles.cashSecondBG} />
+                    <div className={styles.cashThirdBG} />
+                  </>
                 )}
+                <div className={styles.icon}>
+                  <Image image={field} />
+                  {field.amount && (
+                    <span className={styles.amount}>
+                      {formatAmount(field.amount)}
+                    </span>
+                  )}
+                </div>
               </div>
             ) : (
-              <div className={styles.front}>$</div>
+              <div className={`${styles.field} ${styles.front}`}>$</div>
             )}
           </li>
         ))}
