@@ -50,7 +50,7 @@
 .back {
   position: relative;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
   background: rgba(255, 255, 255, 0.1);
@@ -114,7 +114,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -61%);
-  /* bottom: 0; */
   width: 184%;
   height: 130%;
   background: url(/bgfields/01cashlight.png);
@@ -123,11 +122,12 @@
 }
 
 .icon {
-  transform: translateY(-10%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 64%;
+  transform: translateY(-10%);
   z-index: 10;
 }
 
@@ -214,4 +214,10 @@
 
 .amount {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 340px) {
+  .back {
+    font-size: 16px;
+  }
 }
