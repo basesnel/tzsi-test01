@@ -31,6 +31,18 @@ const Field = () => {
                     <div className={styles.cashThirdBG} />
                   </>
                 )}
+                {field.label === "double" && (
+                  <>
+                    <div className={styles.cashFirstBG} />
+                    <div className={styles.doubleLight} />
+                    <div className={styles.doubleBlue} />
+                    <div className={styles.doubleWhite} />
+                    <div className={styles.doubleKonfetti} />
+                    <div className={styles.doubleSecondWhite} />
+                    <div className={styles.doubleSecondBG} />
+                    <div className={styles.cashThirdBG} />
+                  </>
+                )}
                 <div className={styles.icon}>
                   <Image image={field} />
                   {field.amount && (

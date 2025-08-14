@@ -53,17 +53,13 @@
   font-size: 14px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.bgset {
-  z-index: -1;
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 .cashFirstBG {
   position: absolute;
   inset: 0;
-  background: rgba(24, 26, 32, 0.8);
+  background: rgba(24, 26, 32, 0.9);
 }
 
 .cashSecondBG {
@@ -84,7 +80,7 @@
   border-radius: 50%;
   transform: translateY(-50%);
   background: rgba(130, 224, 36, 1);
-  filter: blur(35px);
+  filter: blur(29px);
 }
 
 .cashGreenUpYellow {
@@ -96,24 +92,24 @@
   left: 50%;
   transform: translate(-50%, -100%);
   background: rgba(250, 217, 91, 1);
-  filter: blur(12px);
+  filter: blur(14px);
 }
 
 .cashGreenDown {
   position: absolute;
   top: 100%;
-  width: 100%;
-  height: 40px;
+  width: 50%;
+  height: 100%;
   border-radius: 50%;
   background: rgba(130, 224, 36, 1);
-  filter: blur(32px);
+  filter: blur(16px);
 }
 
 .cashLight {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -61%);
+  transform: translate(-50%, -63%);
   width: 184%;
   height: 130%;
   background: url(/bgfields/01cashlight.png);
@@ -155,7 +151,7 @@
   background-repeat: no-repeat;
 } */
 
-.double {
+/* .double {
   background-image: url(/bgfields/02x2konfetti.png),
     url(/bgfields/02x2light.png),
     linear-gradient(
@@ -167,8 +163,8 @@
   background-position: center, center;
   background-size: 171% auto, 185% auto;
   background-repeat: no-repeat, no-repeat;
-}
-
+} */
+/*
 .double::after {
   content: "";
   position: absolute;
@@ -177,6 +173,68 @@
   height: 100%;
   background: rgba(57, 115, 229, 1);
   filter: blur(60px);
+} */
+
+.doubleLight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 184%;
+  height: 130%;
+  background: url(/bgfields/02x2light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doubleSecondBG {
+  position: absolute;
+  inset: 0;
+  background: rgba(36, 99, 224, 0.1);
+}
+
+.doubleBlue {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(36, 99, 224, 1);
+  filter: blur(25px);
+}
+
+.doubleWhite {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 1);
+  filter: blur(14px);
+}
+
+.doubleKonfetti {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 185%;
+  height: 185%;
+  background: url(/bgfields/02x2konfetti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doubleSecondWhite {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 1);
+  filter: blur(18px);
 }
 
 .zero {
