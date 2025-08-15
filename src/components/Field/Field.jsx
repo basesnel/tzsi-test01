@@ -15,11 +15,7 @@ const Field = () => {
         {fields.map((field) => (
           <li key={field.id} className={styles.item}>
             {isOpen ? (
-              <div
-                className={`${styles.field} ${styles.back} ${
-                  styles[field.label]
-                }`}
-              >
+              <div className={`${styles.field} ${styles.back}`}>
                 {field.label === "cash" && (
                   <>
                     <div className={styles.cashFirstBG} />
@@ -56,10 +52,18 @@ const Field = () => {
                 {field.label === "stop" && (
                   <>
                     <div className={styles.stopLight} />
-                    {/* <div className={styles.zeroYellowTop} />
-                    <div className={styles.zeroYellowBottom} />
-                    <div className={styles.zeroSecondBG} /> */}
                     <div className={styles.stopBG} />
+                  </>
+                )}
+                {field.label === "bomb" && (
+                  <>
+                    <div className={styles.bombFirstBG} />
+                    <div className={styles.bombLight} />
+                    <div className={styles.bombYellow} />
+                    <div className={styles.bombRed} />
+                    <div className={styles.bombRedSecond} />
+                    <div className={styles.bombWhite} />
+                    <div className={styles.cashThirdBG} />
                   </>
                 )}
                 <div className={styles[`icon-${field.label}`]}>

@@ -142,6 +142,11 @@
   z-index: 10;
 }
 
+.icon-bomb {
+  width: 78%;
+  z-index: 10;
+}
+
 /* .cash {
   background-image: url(/bgfields/01cashlight.png),
     radial-gradient(circle at center, rgba(240, 240, 10, 1) 0%, transparent 70%),
@@ -306,11 +311,84 @@
   opacity: 0.5;
 }
 
-.bomb {
+/* .bomb {
   background-image: url(/bgfields/04bomblight.png);
   background-position: center;
   background-size: 185% auto;
   background-repeat: no-repeat;
+} */
+
+.bombFirstBG {
+  position: absolute;
+  inset: 0;
+  background: rgba(116, 21, 33, 0.9);
+}
+
+.bombLight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 184%;
+  height: 130%;
+  background: url(/bgfields/01cashlight.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bombYellow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 184%;
+  height: 130%;
+  -webkit-mask-image: url(/bgfields/01cashlight.png);
+  mask-image: url(/bgfields/01cashlight.png);
+  background: rgba(230, 230, 16, 1);
+  filter: saturate(100%) contrast(200%) brightness(100%);
+  opacity: 0.3;
+}
+
+.bombRed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 184%;
+  height: 130%;
+  -webkit-mask-image: url(/bgfields/01cashlight.png);
+  mask-image: url(/bgfields/01cashlight.png);
+  background: rgba(230, 20, 16, 1);
+  filter: saturate(100%) contrast(200%) brightness(100%);
+}
+
+.bombRedSecond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135%;
+  height: 92%;
+  -webkit-mask-image: url(/bgfields/01cashlight.png);
+  mask-image: url(/bgfields/01cashlight.png);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background: rgba(255, 0, 0, 1);
+  filter: saturate(150%) contrast(200%) brightness(100%);
+}
+
+.bombWhite {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  filter: blur(5px);
+  opacity: 0.7;
 }
 
 /* .stop {
