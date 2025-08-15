@@ -24,9 +24,9 @@ const Field = () => {
                   <>
                     <div className={styles.cashFirstBG} />
                     <div className={styles.cashLight} />
-                    <div className={styles.cashGreenUp} />
+                    {/* <div className={styles.cashGreenUp} />
                     <div className={styles.cashGreenUpYellow} />
-                    <div className={styles.cashGreenDown} />
+                    <div className={styles.cashGreenDown} /> */}
                     <div className={styles.cashSecondBG} />
                     <div className={styles.cashThirdBG} />
                   </>
@@ -43,7 +43,20 @@ const Field = () => {
                     <div className={styles.cashThirdBG} />
                   </>
                 )}
-                <div className={styles.icon}>
+                {field.label === "zero" && (
+                  <>
+                    <div className={styles.cashFirstBG} />
+                    <div className={styles.zeroLight} />
+                    <div className={styles.zeroYellowTop} />
+                    <div className={styles.zeroYellowBottom} />
+                    {/* <div className={styles.doubleWhite} />
+                    <div className={styles.doubleKonfetti} />
+                    <div className={styles.doubleSecondWhite} /> */}
+                    <div className={styles.zeroSecondBG} />
+                    <div className={styles.cashThirdBG} />
+                  </>
+                )}
+                <div className={styles[`icon-${field.label}`]}>
                   <Image image={field} />
                   {field.amount && (
                     <span className={styles.amount}>
