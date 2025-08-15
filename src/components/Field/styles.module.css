@@ -238,11 +238,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 185%;
-  height: 185%;
+  width: 170%;
+  height: 170%;
   background: url(/bgfields/02x2konfetti.png);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.7;
+  filter: contrast(300%) brightness(150%);
 }
 
 .doubleSecondWhite {
