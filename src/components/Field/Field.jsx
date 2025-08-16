@@ -1,12 +1,13 @@
-import { useState } from "react";
-import Image from "../Image/Image";
+// import { useState } from "react";
+// import Image from "../Image/Image";
+import Card from "../Card/Card";
 import fields from "../../constants/fields";
 
-import formatAmount from "../../helpers/formatAmount";
+// import formatAmount from "../../helpers/formatAmount";
 import styles from "./styles.module.css";
 
 const Field = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  // const [isOpen, setIsOpen] = useState(true);
 
   return (
     <section>
@@ -14,7 +15,8 @@ const Field = () => {
       <ul className={styles.list}>
         {fields.map((field) => (
           <li key={field.id} className={styles.item}>
-            {isOpen ? (
+            <Card field={field} />
+            {/* {isOpen ? (
               <div className={`${styles.field} ${styles.back}`}>
                 {field.label === "cash" && (
                   <>
@@ -77,7 +79,7 @@ const Field = () => {
               </div>
             ) : (
               <div className={`${styles.field} ${styles.front}`}>$</div>
-            )}
+            )} */}
           </li>
         ))}
       </ul>
