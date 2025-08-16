@@ -1,9 +1,8 @@
 import Image from "../Image/Image";
-import tips from "../../constants/tips";
 
 import styles from "./styles.module.css";
 
-const Tips = () => {
+const Tips = ({ tips }) => {
   return (
     <section className={styles.section}>
       <h2 className={styles.hidden}>game tips</h2>

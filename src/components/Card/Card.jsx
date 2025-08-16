@@ -3,24 +3,37 @@ import Image from "../Image/Image";
 import formatAmount from "../../helpers/formatAmount";
 import styles from "./styles.module.css";
 
-const Card = ({ image, amount }) => {
+const Card = ({ image, amount, setCount, tips, setTips }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const openCard = () => {
+    setIsOpen(true);
+
+    image.label.toLowerCase() === "cash" && setCount((count) => count + amount);
+    image.label.toLowerCase() === "double" && setCount((count) => count * 2);
+    image.label.toLowerCase() === "zero" && setCount((count) => count * 0);
+
+    setTips(
+      tips.map((tip) => {
+        if (tip.image.label === image.label) {
+          return { ...tip, amount: tip.amount - 1 };
+        } else {
+          return tip;
+        }
+      })
+    );
+  };
+
   return (
     <>
       {!isOpen ? (
-        <div
-          className={`${styles.card} ${styles.front}`}
-          onClick={() => setIsOpen(true)}
-        >
+        <div className={`${styles.card} ${styles.front}`} onClick={openCard}>
           $
         </div>
       ) : (
-        <div
-          className={`${styles.card} ${styles.back}`}
-          onClick={() => setIsOpen(false)}
-        >
+        <div className={`${styles.card} ${styles.back}`}>
           <Decor label={image.label} />
-          <div className={styles[`icon-${image.label}`]}>
+          <div className={styles[`icon-${image.label.toLowerCase()}`]}>
             <Image image={image} />
             {amount && (
               <span className={styles.amount}>{formatAmount(amount)}</span>
@@ -33,7 +46,7 @@ const Card = ({ image, amount }) => {
 };
 
 const Decor = ({ label }) => {
-  switch (label) {
+  switch (label.toLowerCase()) {
     case "cash":
       return (
         <>
