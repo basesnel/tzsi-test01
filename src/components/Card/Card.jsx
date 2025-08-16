@@ -3,7 +3,7 @@ import Image from "../Image/Image";
 import formatAmount from "../../helpers/formatAmount";
 import styles from "./styles.module.css";
 
-const Card = ({ field }) => {
+const Card = ({ image, amount }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -19,7 +19,7 @@ const Card = ({ field }) => {
           className={`${styles.card} ${styles.back}`}
           onClick={() => setIsOpen(false)}
         >
-          {field.label === "cash" && (
+          {image.label === "cash" && (
             <>
               <div className={styles.cashFirstBG} />
               <div className={styles.cashLight} />
@@ -30,7 +30,7 @@ const Card = ({ field }) => {
               <div className={styles.cashThirdBG} />
             </>
           )}
-          {field.label === "double" && (
+          {image.label === "double" && (
             <>
               <div className={styles.cashFirstBG} />
               <div className={styles.doubleLight} />
@@ -42,7 +42,7 @@ const Card = ({ field }) => {
               <div className={styles.cashThirdBG} />
             </>
           )}
-          {field.label === "zero" && (
+          {image.label === "zero" && (
             <>
               <div className={styles.cashFirstBG} />
               <div className={styles.zeroLight} />
@@ -52,13 +52,13 @@ const Card = ({ field }) => {
               <div className={styles.cashThirdBG} />
             </>
           )}
-          {field.label === "stop" && (
+          {image.label === "stop" && (
             <>
               <div className={styles.stopLight} />
               <div className={styles.stopBG} />
             </>
           )}
-          {field.label === "bomb" && (
+          {image.label === "bomb" && (
             <>
               <div className={styles.bombFirstBG} />
               <div className={styles.bombLight} />
@@ -69,12 +69,10 @@ const Card = ({ field }) => {
               <div className={styles.cashThirdBG} />
             </>
           )}
-          <div className={styles[`icon-${field.label}`]}>
-            <Image image={field} />
-            {field.amount && (
-              <span className={styles.amount}>
-                {formatAmount(field.amount)}
-              </span>
+          <div className={styles[`icon-${image.label}`]}>
+            <Image image={image} />
+            {amount && (
+              <span className={styles.amount}>{formatAmount(amount)}</span>
             )}
           </div>
         </div>
