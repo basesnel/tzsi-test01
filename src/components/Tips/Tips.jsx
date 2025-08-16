@@ -8,10 +8,10 @@ const Tips = () => {
     <section className={styles.section}>
       <h2 className={styles.hidden}>game tips</h2>
       <ul className={styles.list}>
-        {tips.map((tip) => (
-          <li key={tip.id} className={styles.item}>
-            <Image image={tip} />
-            <span className={styles.amount}>{tip.amount}</span>
+        {tips.map(({ id, amount, image }) => (
+          <li key={id} className={styles.item}>
+            <Image image={image} />
+            <span className={styles.amount}>{amount}</span>
           </li>
         ))}
       </ul>
