@@ -93,6 +93,9 @@ const Decor = ({ label }) => {
           <div className={styles.cashThirdBG} />
         </>
       );
+
+    default:
+      return;
   }
 };
 
