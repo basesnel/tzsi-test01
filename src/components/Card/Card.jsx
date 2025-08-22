@@ -7,6 +7,7 @@ import Modal from "../Modal/Modal";
 const Card = ({ image, amount, setCount, tips, setTips }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [game, setGame] = useState("movement");
 
   const openCard = () => {
     setIsOpen(true);
@@ -14,7 +15,10 @@ const Card = ({ image, amount, setCount, tips, setTips }) => {
     image.label.toLowerCase() === "cash" && setCount((count) => count + amount);
     image.label.toLowerCase() === "double" && setCount((count) => count * 2);
     image.label.toLowerCase() === "zero" && setCount((count) => count * 0);
+    image.label.toLowerCase() === "bomb" && setGame("bomb");
     image.label.toLowerCase() === "bomb" && setShowModal(true);
+    image.label.toLowerCase() === "stop" && setGame("stop");
+    image.label.toLowerCase() === "stop" && setShowModal(true);
 
     setTips(
       tips.map((tip) => {
@@ -44,7 +48,7 @@ const Card = ({ image, amount, setCount, tips, setTips }) => {
           </div>
         </div>
       )}
-      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <Modal showModal={showModal} setShowModal={setShowModal} game={game} />
     </>
   );
 };
