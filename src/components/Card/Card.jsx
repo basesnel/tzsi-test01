@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Image from "../Image/Image";
 import formatAmount from "../../helpers/formatAmount";
-import styles from "./styles.module.css";
 import Modal from "../Modal/Modal";
+
+import styles from "./styles.module.css";
 
 const Card = ({ image, amount, setCount, tips, setTips }) => {
   const [isOpen, setIsOpen] = useState(false);

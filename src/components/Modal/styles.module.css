@@ -13,18 +13,116 @@
   z-index: 151;
 }
 
-.title {
-  color: rgba(255, 230, 230, 1);
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
+.modalContainer {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 428px;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
-.modalContainer {
+.modal {
+  padding-top: 170px;
+}
+
+.warning {
+  position: relative;
+  height: 260px;
+  margin: 0 32px;
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100%;
-  padding: 16px 16px 16px 48px;
-  box-sizing: border-box;
+  background: url(/bgmodal/modal-light-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(61px);
+  z-index: 1;
+}
+
+.light::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(225, 48, 48, 1);
+  filter: blur(36px);
+}
+
+.bombRed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(225, 48, 48, 1);
+  filter: blur(30px);
+  -webkit-mask-image: url(/bgmodal/modal-light-1x.png);
+  mask-image: url(/bgmodal/modal-light-1x.png);
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.bombWhite {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  filter: blur(12px);
+  opacity: 0.7;
+  z-index: 3;
+}
+
+.image {
+  z-index: 4;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255, 230, 230, 1);
+}
+
+.text {
+  width: 275px;
+  margin: 0 auto 44px;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
 }
