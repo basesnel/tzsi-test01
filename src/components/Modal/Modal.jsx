@@ -4,17 +4,28 @@ import Image from "../Image/Image";
 import { bomb } from "../../constants/modal";
 
 import styles from "./styles.module.css";
+import useCloseModal from "../../hooks/useCloseModal";
 
-const Modal = ({ showModal, setShowModal, game }) => {
+const Modal = ({ showModal, setShowModal, gameState }) => {
+  const closeModal = () => {
+    setShowModal(false);
+    document.body.style.overflow = "";
+  };
+
+  useCloseModal(showModal, closeModal);
+
   return createPortal(
     <>
       {showModal && (
-        <div className={styles.backdrop} onClick={() => setShowModal(false)}>
+        <div className={styles.backdrop} onClick={() => closeModal()}>
           <div className={styles.modalPosition}>
-            <div className={styles.modalContainer}>
+            <div
+              className={styles.modalContainer}
+              onClick={(e) => e.stopPropagation()}
+            >
               <Navbar />
               <div className={styles.modal}>
-                {game === "bomb" && (
+                {gameState === "bomb" && (
                   <>
                     <h2 className={styles.title}>Danger ahead!</h2>
                     <div className={styles.warning}>
@@ -34,7 +45,7 @@ const Modal = ({ showModal, setShowModal, game }) => {
                     </div>
                   </>
                 )}
-                {game === "stop" && (
+                {gameState === "stop" && (
                   <h2 className={styles.title}>Game over!</h2>
                 )}
               </div>
