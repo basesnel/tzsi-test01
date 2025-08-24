@@ -57,7 +57,9 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
                         <button
                           className={`${styles.button} ${styles.secondButton}`}
                         >
-                          Defuse for...
+                          Defuse for
+                          <Image image={buttonDefuse} />
+                          49
                         </button>
                       </li>
                     </ul>
