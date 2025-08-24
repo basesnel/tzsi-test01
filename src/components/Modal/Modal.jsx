@@ -1,7 +1,13 @@
 import { createPortal } from "react-dom";
 import Navbar from "../Navbar/Navbar";
 import Image from "../Image/Image";
-import { bomb, cash, buttonBomb, buttonDefuse } from "../../constants/modal";
+import {
+  bomb,
+  stop,
+  cash,
+  buttonBomb,
+  buttonDefuse,
+} from "../../constants/modal";
 
 import styles from "./styles.module.css";
 import useCloseModal from "../../hooks/useCloseModal";
@@ -67,7 +73,35 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
                 </>
               )}
               {gameState === "stop" && (
-                <h2 className={styles.title}>Game over!</h2>
+                <>
+                  <div className={styles.stopLight}>
+                    <Image image={stop} />
+                  </div>
+                  <section className={styles.content}>
+                    <h2 className={styles.title}>Game over!</h2>
+                    <p className={`${styles.text} ${styles.firstText}`}>
+                      You've reached the end of this run...
+                    </p>
+                    <figure className={styles.figure}>
+                      <Image image={cash} />
+                      <figcaption className={styles.caption}>
+                        {count}
+                      </figcaption>
+                    </figure>
+                    <p className={`${styles.text} ${styles.secondText}`}>
+                      ...claim and return to the main board
+                    </p>
+                    <ul className={styles.control}>
+                      <li className={styles.item}>
+                        <button
+                          className={`${styles.button} ${styles.thirdButton}`}
+                        >
+                          Claim
+                        </button>
+                      </li>
+                    </ul>
+                  </section>
+                </>
               )}
             </div>
           </div>

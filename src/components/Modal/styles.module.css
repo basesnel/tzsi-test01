@@ -69,6 +69,31 @@
   z-index: -2;
 }
 
+.stopLight {
+  position: absolute;
+  width: 364px;
+  height: 260px;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/bgmodal/modal-light-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.stopLight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  filter: blur(61px);
+  z-index: -2;
+}
+
 .bombRed {
   position: absolute;
   width: 100%;
@@ -189,5 +214,13 @@
     180deg,
     rgba(173, 105, 255, 1),
     rgba(103, 35, 205, 1) 100%
+  );
+}
+
+.thirdButton {
+  background: linear-gradient(
+    180deg,
+    rgba(110, 191, 29, 1),
+    rgba(73, 128, 19, 1) 100%
   );
 }
