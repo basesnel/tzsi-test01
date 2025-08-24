@@ -24,31 +24,25 @@ const Modal = ({ showModal, setShowModal, gameState }) => {
               onClick={(e) => e.stopPropagation()}
             >
               <Navbar />
-              <div className={styles.modal}>
-                {gameState === "bomb" && (
-                  <>
+              {gameState === "bomb" && (
+                <>
+                  <div className={styles.light}>
+                    <div className={styles.bombRed} />
+                    <div className={styles.bombWhite} />
+                    <Image image={bomb} />
+                  </div>
+                  <div className={styles.content}>
                     <h2 className={styles.title}>Danger ahead!</h2>
-                    <div className={styles.warning}>
-                      <div className={styles.light}>
-                        <div className={styles.bombRed} />
-                        <div className={styles.bombWhite} />
-                        <div className={styles.image}>
-                          <Image image={bomb} />
-                        </div>
-                      </div>
-                      <div className={styles.content}>
-                        <p className={styles.text}>
-                          You're on a Bomb Square! You hit a bomb and lose all
-                          rewards from this field...
-                        </p>
-                      </div>
-                    </div>
-                  </>
-                )}
-                {gameState === "stop" && (
-                  <h2 className={styles.title}>Game over!</h2>
-                )}
-              </div>
+                    <p className={styles.text}>
+                      You're on a Bomb Square! You hit a bomb and lose all
+                      rewards from this field...
+                    </p>
+                  </div>
+                </>
+              )}
+              {gameState === "stop" && (
+                <h2 className={styles.title}>Game over!</h2>
+              )}
             </div>
           </div>
         </div>
