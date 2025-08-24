@@ -2,9 +2,9 @@ import styles from "./styles.module.css";
 
 const Image = ({ image }) => {
   return (
-    <div className={styles.thumb}>
+    <>
       {image ? (
-        <picture>
+        <picture className={styles.thumb}>
           <source srcSet={image.wbp} type="image/webp" />
           <img
             src={image.png}
@@ -15,7 +15,7 @@ const Image = ({ image }) => {
           />
         </picture>
       ) : null}
-    </div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 import { createPortal } from "react-dom";
 import Navbar from "../Navbar/Navbar";
 import Image from "../Image/Image";
-import { bomb, cash } from "../../constants/modal";
+import { bomb, cash, buttonBomb, buttonDefuse } from "../../constants/modal";
 
 import styles from "./styles.module.css";
 import useCloseModal from "../../hooks/useCloseModal";
@@ -48,7 +48,10 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
                     </p>
                     <ul className={styles.control}>
                       <li className={styles.item}>
-                        <button className={styles.button}>Take a hit</button>
+                        <button className={styles.button}>
+                          <Image image={buttonBomb} />
+                          Take a hit
+                        </button>
                       </li>
                       <li className={styles.item}>
                         <button
