@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 const Card = ({ image, amount, count, setCount, tips, setTips }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [gameState, setGameState] = useState("movement");
+  const [gameState, setGameState] = useState("run");
 
   const openModal = () => {
     setShowModal(true);

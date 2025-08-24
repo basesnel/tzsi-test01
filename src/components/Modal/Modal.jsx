@@ -43,6 +43,21 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
                         {count}
                       </figcaption>
                     </figure>
+                    <p className={`${styles.text} ${styles.secondText}`}>
+                      ...or defuse it and save your run!
+                    </p>
+                    <ul className={styles.control}>
+                      <li className={styles.item}>
+                        <button className={styles.button}>Take a hit</button>
+                      </li>
+                      <li className={styles.item}>
+                        <button
+                          className={`${styles.button} ${styles.secondButton}`}
+                        >
+                          Defuse for...
+                        </button>
+                      </li>
+                    </ul>
                   </section>
                 </>
               )}
