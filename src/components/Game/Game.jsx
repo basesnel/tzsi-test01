@@ -19,7 +19,7 @@ const Game = () => {
       <Navbar />
       <Title title="roll craft" />
       <Counter counter={count} />
-      <Field setCount={setCount} tips={tips} setTips={setTips} />
+      <Field count={count} setCount={setCount} tips={tips} setTips={setTips} />
       <Tips tips={tips} />
       <Claim />
       <Footer />

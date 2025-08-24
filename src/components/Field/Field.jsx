@@ -3,7 +3,7 @@ import cards from "../../constants/cards";
 
 import styles from "./styles.module.css";
 
-const Field = ({ setCount, tips, setTips }) => {
+const Field = ({ count, setCount, tips, setTips }) => {
   return (
     <section className={styles.section}>
       <h2 className={styles.hidden}>game field</h2>
@@ -13,6 +13,7 @@ const Field = ({ setCount, tips, setTips }) => {
             <Card
               image={image}
               amount={amount}
+              count={count}
               setCount={setCount}
               tips={tips}
               setTips={setTips}

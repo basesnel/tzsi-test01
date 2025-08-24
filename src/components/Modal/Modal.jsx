@@ -1,12 +1,12 @@
 import { createPortal } from "react-dom";
 import Navbar from "../Navbar/Navbar";
 import Image from "../Image/Image";
-import { bomb } from "../../constants/modal";
+import { bomb, cash } from "../../constants/modal";
 
 import styles from "./styles.module.css";
 import useCloseModal from "../../hooks/useCloseModal";
 
-const Modal = ({ showModal, setShowModal, gameState }) => {
+const Modal = ({ showModal, setShowModal, gameState, count }) => {
   const closeModal = () => {
     setShowModal(false);
     document.body.style.overflow = "";
@@ -31,13 +31,19 @@ const Modal = ({ showModal, setShowModal, gameState }) => {
                     <div className={styles.bombWhite} />
                     <Image image={bomb} />
                   </div>
-                  <div className={styles.content}>
+                  <section className={styles.content}>
                     <h2 className={styles.title}>Danger ahead!</h2>
-                    <p className={styles.text}>
+                    <p className={`${styles.text} ${styles.firstText}`}>
                       You're on a Bomb Square! You hit a bomb and lose all
                       rewards from this field...
                     </p>
-                  </div>
+                    <figure className={styles.figure}>
+                      <Image image={cash} />
+                      <figcaption className={styles.caption}>
+                        {count}
+                      </figcaption>
+                    </figure>
+                  </section>
                 </>
               )}
               {gameState === "stop" && (

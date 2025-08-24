@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 
 import styles from "./styles.module.css";
 
-const Card = ({ image, amount, setCount, tips, setTips }) => {
+const Card = ({ image, amount, count, setCount, tips, setTips }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [gameState, setGameState] = useState("movement");
@@ -58,6 +58,7 @@ const Card = ({ image, amount, setCount, tips, setTips }) => {
         showModal={showModal}
         setShowModal={setShowModal}
         gameState={gameState}
+        count={count}
       />
     </>
   );
