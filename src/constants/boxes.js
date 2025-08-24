@@ -15,7 +15,7 @@ import stopWBP from "../assets/fields/05stop.webp";
 import stopPNG from "../assets/fields/05stop.png";
 import stopBG from "../assets/fields/05stoplight.png";
 
-const cards = [
+const boxes = [
   {
     id: 1,
     amount: 100,
@@ -69,4 +69,4 @@ const cards = [
   },
 ];
 
-export default cards;
+export default boxes;
