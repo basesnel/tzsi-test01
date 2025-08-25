@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 
 import styles from "./styles.module.css";
 
-const Box = ({ image, amount, count, setCount, tips, setTips }) => {
+const Card = ({ image, amount, count, setCount, tips, setTips }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [gameState, setGameState] = useState("run");
@@ -15,7 +15,7 @@ const Box = ({ image, amount, count, setCount, tips, setTips }) => {
     document.body.style.overflow = "hidden";
   };
 
-  const openBox = () => {
+  const openCard = () => {
     setIsOpen(true);
 
     image.label.toLowerCase() === "cash" && setCount((count) => count + amount);
@@ -40,11 +40,11 @@ const Box = ({ image, amount, count, setCount, tips, setTips }) => {
   return (
     <>
       {!isOpen ? (
-        <div className={`${styles.box} ${styles.front}`} onClick={openBox}>
+        <div className={`${styles.card} ${styles.front}`} onClick={openCard}>
           $
         </div>
       ) : (
-        <div className={`${styles.box} ${styles.back}`}>
+        <div className={`${styles.card} ${styles.back}`}>
           <Decor label={image.label} />
           <div className={styles[`icon-${image.label.toLowerCase()}`]}>
             <Image image={image} />
@@ -131,4 +131,4 @@ const Decor = ({ label }) => {
   }
 };
 
-export default Box;
+export default Card;

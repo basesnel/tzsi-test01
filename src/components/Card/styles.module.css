@@ -1,5 +1,5 @@
-/* Box styles: front & back. -start- */
-.box {
+/* Card styles: front & back. -start- */
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,10 +30,10 @@
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
 }
-/* Box styles: front & back. -end- */
+/* Card styles: front & back. -end- */
 
-/* Box back-background styles. -start- */
-/* Styles for box-cash background. -start- */
+/* Card back-background styles. -start- */
+/* Styles for card-cash background. -start- */
 .cashFirstBG {
   position: absolute;
   inset: 0;
@@ -95,9 +95,9 @@
   border-radius: 12px;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
 }
-/* Styles for box-cash background. -end- */
+/* Styles for card-cash background. -end- */
 
-/* Styles for box-double background. -start- */
+/* Styles for card-double background. -start- */
 .doubleLight {
   position: absolute;
   top: 50%;
@@ -161,9 +161,9 @@
   inset: 0;
   background: rgba(36, 99, 224, 0.1);
 }
-/* Styles for box-double background. -end- */
+/* Styles for card-double background. -end- */
 
-/* Styles for box-zero background. -start- */
+/* Styles for card-zero background. -start- */
 .zeroLight {
   position: absolute;
   top: 50%;
@@ -204,9 +204,9 @@
   inset: 0;
   background: rgba(224, 193, 36, 0.1);
 }
-/* Styles for box-zero background. -end- */
+/* Styles for card-zero background. -end- */
 
-/* Styles for box-stop background. -start- */
+/* Styles for card-stop background. -start- */
 .stopLight {
   position: absolute;
   top: 50%;
@@ -226,9 +226,9 @@
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
 }
-/* Styles for box-stop background. -end- */
+/* Styles for card-stop background. -end- */
 
-/* Styles for box-bomb background. -start- */
+/* Styles for card-bomb background. -start- */
 .bombFirstBG {
   position: absolute;
   inset: 0;
@@ -301,7 +301,7 @@
   filter: blur(5px);
   opacity: 0.7;
 }
-/* Styles for box-bomb background. -end- */
+/* Styles for card-bomb background. -end- */
 
 /* Styles for icons. -start- */
 .icon-cash {

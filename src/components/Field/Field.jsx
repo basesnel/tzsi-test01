@@ -1,4 +1,4 @@
-import Box from "../Box/Box";
+import Card from "../Card/Card";
 import boxes from "../../constants/boxes";
 
 import styles from "./styles.module.css";
@@ -10,7 +10,7 @@ const Field = ({ count, setCount, tips, setTips }) => {
       <ul className={styles.list}>
         {boxes.map(({ id, image, amount }) => (
           <li key={id} className={styles.item}>
-            <Box
+            <Card
               image={image}
               amount={amount}
               count={count}
