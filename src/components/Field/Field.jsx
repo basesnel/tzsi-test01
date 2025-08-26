@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import boxes from "../../constants/boxes";
+import cards from "../../constants/cards";
 
 import styles from "./styles.module.css";
 
@@ -8,7 +8,7 @@ const Field = ({ count, setCount, tips, setTips }) => {
     <section className={styles.section}>
       <h2 className={styles.hidden}>game field</h2>
       <ul className={styles.list}>
-        {boxes.map(({ id, image, amount }) => (
+        {cards.map(({ id, image, amount }) => (
           <li key={id} className={styles.item}>
             <Card
               image={image}

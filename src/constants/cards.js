@@ -1,21 +1,21 @@
-import cashWBP from "../assets/fields/01cash.webp";
-import cashPNG from "../assets/fields/01cash.png";
-import cashBG from "../assets/fields/01cashlight.png";
-import x2WBP from "../assets/fields/02x2.webp";
-import x2PNG from "../assets/fields/02x2.png";
-import x2BG from "../assets/fields/02x2light.png";
-import x2BG2 from "../assets/fields/02x2konfetti.png";
-import zeroWBP from "../assets/fields/03zero.webp";
-import zeroPNG from "../assets/fields/03zero.png";
-import zeroBG from "../assets/fields/03zerolight.png";
-import bombWBP from "../assets/fields/04bomb.webp";
-import bombPNG from "../assets/fields/04bomb.png";
-import bombBG from "../assets/fields/04bomblight.png";
-import stopWBP from "../assets/fields/05stop.webp";
-import stopPNG from "../assets/fields/05stop.png";
-import stopBG from "../assets/fields/05stoplight.png";
+import cashWBP from "../assets/cards/01cash.webp";
+import cashPNG from "../assets/cards/01cash.png";
+import cashBG from "../assets/cards/01cashlight.png";
+import x2WBP from "../assets/cards/02x2.webp";
+import x2PNG from "../assets/cards/02x2.png";
+import x2BG from "../assets/cards/02x2light.png";
+import x2BG2 from "../assets/cards/02x2konfetti.png";
+import zeroWBP from "../assets/cards/03zero.webp";
+import zeroPNG from "../assets/cards/03zero.png";
+import zeroBG from "../assets/cards/03zerolight.png";
+import bombWBP from "../assets/cards/04bomb.webp";
+import bombPNG from "../assets/cards/04bomb.png";
+import bombBG from "../assets/cards/04bomblight.png";
+import stopWBP from "../assets/cards/05stop.webp";
+import stopPNG from "../assets/cards/05stop.png";
+import stopBG from "../assets/cards/05stoplight.png";
 
-const boxes = [
+const cards = [
   {
     id: 1,
     amount: 100,
@@ -69,4 +69,4 @@ const boxes = [
   },
 ];
 
-export default boxes;
+export default cards;
