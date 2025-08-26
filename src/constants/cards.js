@@ -1,5 +1,5 @@
 import cashWBP from "../assets/cards/01cash.webp";
-import cashPNG from "../assets/cards/01cash.png";
+import cashPNG from "../assets/cards/images/01-cash-1x.png";
 import cashBG from "../assets/cards/01cashlight.png";
 import x2WBP from "../assets/cards/02x2.webp";
 import x2PNG from "../assets/cards/02x2.png";
