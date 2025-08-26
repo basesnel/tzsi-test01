@@ -5,7 +5,16 @@ import Modal from "../Modal/Modal";
 
 import styles from "./styles.module.css";
 
-const Card = ({ image, amount, count, setCount, tips, setTips }) => {
+const Card = ({
+  image,
+  amount,
+  count,
+  setCount,
+  cards,
+  setCards,
+  tips,
+  setTips,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [gameState, setGameState] = useState("run");
@@ -25,6 +34,17 @@ const Card = ({ image, amount, count, setCount, tips, setTips }) => {
     image.label.toLowerCase() === "bomb" && openModal();
     image.label.toLowerCase() === "stop" && setGameState("stop");
     image.label.toLowerCase() === "stop" && openModal();
+
+    image.label.toLowerCase() === "double" &&
+      setCards(
+        cards.map((card) => {
+          if (card.image.label.toLowerCase() === "cash") {
+            return { ...card, amount: card.amount * 2 };
+          } else {
+            return card;
+          }
+        })
+      );
 
     setTips(
       tips.map((tip) => {

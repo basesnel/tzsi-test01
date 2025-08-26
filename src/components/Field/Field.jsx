@@ -1,9 +1,12 @@
 import Card from "../Card/Card";
-import cards from "../../constants/cards";
+import initialCards from "../../constants/cards";
 
 import styles from "./styles.module.css";
+import { useState } from "react";
 
 const Field = ({ count, setCount, tips, setTips }) => {
+  const [cards, setCards] = useState(initialCards);
+
   return (
     <section className={styles.section}>
       <h2 className={styles.hidden}>game field</h2>
@@ -15,6 +18,8 @@ const Field = ({ count, setCount, tips, setTips }) => {
               amount={amount}
               count={count}
               setCount={setCount}
+              cards={cards}
+              setCards={setCards}
               tips={tips}
               setTips={setTips}
             />
