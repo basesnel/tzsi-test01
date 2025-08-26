@@ -1,7 +1,8 @@
 const formatAmount = (amount) => {
-  if (amount === 1000000) return "1m";
-  if (amount === 10000) return "10k";
-  return amount;
+  if (!amount) return `$ ${amount}`;
+  if (!(amount % 1000000)) return `$ ${amount / 1000000}m`;
+  if (!(amount % 1000)) return `$ ${amount / 1000}k`;
+  return `$ ${amount}`;
 };
 
 export default formatAmount;

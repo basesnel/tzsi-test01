@@ -50,7 +50,7 @@ const Card = ({
       setCards(
         cards.map((card) => {
           if (card.image.label.toLowerCase() === "cash") {
-            return { ...card, amount: card.amount * 0 };
+            return { ...card, amount: 0 };
           } else {
             return card;
           }
