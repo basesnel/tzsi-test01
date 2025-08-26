@@ -46,6 +46,17 @@ const Card = ({
         })
       );
 
+    image.label.toLowerCase() === "zero" &&
+      setCards(
+        cards.map((card) => {
+          if (card.image.label.toLowerCase() === "cash") {
+            return { ...card, amount: card.amount * 0 };
+          } else {
+            return card;
+          }
+        })
+      );
+
     setTips(
       tips.map((tip) => {
         if (tip.image.label === image.label) {
