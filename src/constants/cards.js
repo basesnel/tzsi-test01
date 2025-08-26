@@ -1,6 +1,6 @@
-import cashWBP from "../assets/cards/01cash.webp";
+import cashWBP from "../assets/cards/images/01-cash-1x.webp";
 import cashPNG from "../assets/cards/images/01-cash-1x.png";
-import cashBG from "../assets/cards/01cashlight.png";
+// import cashBG from "../assets/cards/01cashlight.png";
 import x2WBP from "../assets/cards/02x2.webp";
 import x2PNG from "../assets/cards/02x2.png";
 import x2BG from "../assets/cards/02x2light.png";
@@ -19,31 +19,31 @@ const cards = [
   {
     id: 1,
     amount: 100,
-    bg: cashBG,
+    // bg: cashBG,
     image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
   },
   {
     id: 2,
     amount: 500,
-    bg: cashBG,
+    // bg: cashBG,
     image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
   },
   {
     id: 3,
     amount: 1000,
-    bg: cashBG,
+    // bg: cashBG,
     image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
   },
   {
     id: 4,
     amount: 10000,
-    bg: cashBG,
+    // bg: cashBG,
     image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
   },
   {
     id: 5,
     amount: 1000000,
-    bg: cashBG,
+    // bg: cashBG,
     image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
   },
   {
