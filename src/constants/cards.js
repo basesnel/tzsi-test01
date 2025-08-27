@@ -9,9 +9,10 @@ import double1xWBP from "../assets/cards/images/02-double-1x.webp";
 import double1xPNG from "../assets/cards/images/02-double-1x.png";
 import double2xWBP from "../assets/cards/images/02-double-2x.webp";
 import double2xPNG from "../assets/cards/images/02-double-2x.png";
+import double3xWBP from "../assets/cards/images/02-double-3x.webp";
 import double3xPNG from "../assets/cards/images/02-double-3x.png";
-import x2BG from "../assets/cards/02x2light.png";
-import x2BG2 from "../assets/cards/02x2konfetti.png";
+// import x2BG from "../assets/cards/02x2light.png";
+// import x2BG2 from "../assets/cards/02x2konfetti.png";
 import zeroWBP from "../assets/cards/03zero.webp";
 import zeroPNG from "../assets/cards/03zero.png";
 import zeroBG from "../assets/cards/03zerolight.png";
@@ -105,13 +106,14 @@ const cards = [
   },
   {
     id: 6,
-    bg: x2BG,
-    bg2: x2BG2,
+    // bg: x2BG,
+    // bg2: x2BG2,
     image: {
       wbp: double1xWBP,
       png: double1xPNG,
       wbp2x: double2xWBP,
       png2x: double2xPNG,
+      wbp3x: double3xWBP,
       png3x: double3xPNG,
       width: 72,
       height: 72,
