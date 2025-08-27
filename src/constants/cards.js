@@ -9,6 +9,7 @@ import double1xWBP from "../assets/cards/images/02-double-1x.webp";
 import double1xPNG from "../assets/cards/images/02-double-1x.png";
 import double2xWBP from "../assets/cards/images/02-double-2x.webp";
 import double2xPNG from "../assets/cards/images/02-double-2x.png";
+import double3xPNG from "../assets/cards/images/02-double-3x.png";
 import x2BG from "../assets/cards/02x2light.png";
 import x2BG2 from "../assets/cards/02x2konfetti.png";
 import zeroWBP from "../assets/cards/03zero.webp";
@@ -111,6 +112,7 @@ const cards = [
       png: double1xPNG,
       wbp2x: double2xWBP,
       png2x: double2xPNG,
+      png3x: double3xPNG,
       width: 72,
       height: 72,
       label: "Double",
