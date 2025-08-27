@@ -1,12 +1,13 @@
-import cashWBP from "../assets/cards/images/01-cash-1x.webp";
-import cashPNG from "../assets/cards/images/01-cash-1x.png";
+import cash1xWBP from "../assets/cards/images/01-cash-1x.webp";
+import cash1xPNG from "../assets/cards/images/01-cash-1x.png";
 import cash2xWBP from "../assets/cards/images/01-cash-2x.webp";
 import cash2xPNG from "../assets/cards/images/01-cash-2x.png";
 import cash3xWBP from "../assets/cards/images/01-cash-3x.webp";
 import cash3xPNG from "../assets/cards/images/01-cash-3x.png";
 // import cashBG from "../assets/cards/01cashlight.png";
-import doubleWBP from "../assets/cards/images/02-double-1x.webp";
-import doublePNG from "../assets/cards/images/02-double-1x.png";
+import double1xWBP from "../assets/cards/images/02-double-1x.webp";
+import double1xPNG from "../assets/cards/images/02-double-1x.png";
+import double2xPNG from "../assets/cards/images/02-double-2x.png";
 import x2BG from "../assets/cards/02x2light.png";
 import x2BG2 from "../assets/cards/02x2konfetti.png";
 import zeroWBP from "../assets/cards/03zero.webp";
@@ -25,8 +26,8 @@ const cards = [
     amount: 100,
     // bg: cashBG,
     image: {
-      wbp: cashWBP,
-      png: cashPNG,
+      wbp: cash1xWBP,
+      png: cash1xPNG,
       wbp2x: cash2xWBP,
       png2x: cash2xPNG,
       wbp3x: cash3xWBP,
@@ -40,33 +41,73 @@ const cards = [
     id: 2,
     amount: 500,
     // bg: cashBG,
-    image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
+    image: {
+      wbp: cash1xWBP,
+      png: cash1xPNG,
+      wbp2x: cash2xWBP,
+      png2x: cash2xPNG,
+      wbp3x: cash3xWBP,
+      png3x: cash3xPNG,
+      width: 72,
+      height: 72,
+      label: "Cash",
+    },
   },
   {
     id: 3,
     amount: 1000,
     // bg: cashBG,
-    image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
+    image: {
+      wbp: cash1xWBP,
+      png: cash1xPNG,
+      wbp2x: cash2xWBP,
+      png2x: cash2xPNG,
+      wbp3x: cash3xWBP,
+      png3x: cash3xPNG,
+      width: 72,
+      height: 72,
+      label: "Cash",
+    },
   },
   {
     id: 4,
     amount: 10000,
     // bg: cashBG,
-    image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
+    image: {
+      wbp: cash1xWBP,
+      png: cash1xPNG,
+      wbp2x: cash2xWBP,
+      png2x: cash2xPNG,
+      wbp3x: cash3xWBP,
+      png3x: cash3xPNG,
+      width: 72,
+      height: 72,
+      label: "Cash",
+    },
   },
   {
     id: 5,
     amount: 1000000,
     // bg: cashBG,
-    image: { wbp: cashWBP, png: cashPNG, width: 72, height: 72, label: "Cash" },
+    image: {
+      wbp: cash1xWBP,
+      png: cash1xPNG,
+      wbp2x: cash2xWBP,
+      png2x: cash2xPNG,
+      wbp3x: cash3xWBP,
+      png3x: cash3xPNG,
+      width: 72,
+      height: 72,
+      label: "Cash",
+    },
   },
   {
     id: 6,
     bg: x2BG,
     bg2: x2BG2,
     image: {
-      wbp: doubleWBP,
-      png: doublePNG,
+      wbp: double1xWBP,
+      png: double1xPNG,
       width: 72,
       height: 72,
       label: "Double",
