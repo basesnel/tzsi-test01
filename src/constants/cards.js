@@ -108,6 +108,7 @@ const cards = [
     image: {
       wbp: double1xWBP,
       png: double1xPNG,
+      png2x: double2xPNG,
       width: 72,
       height: 72,
       label: "Double",
