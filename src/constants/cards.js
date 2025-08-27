@@ -7,6 +7,7 @@ import cash3xPNG from "../assets/cards/images/01-cash-3x.png";
 // import cashBG from "../assets/cards/01cashlight.png";
 import double1xWBP from "../assets/cards/images/02-double-1x.webp";
 import double1xPNG from "../assets/cards/images/02-double-1x.png";
+import double2xWBP from "../assets/cards/images/02-double-2x.webp";
 import double2xPNG from "../assets/cards/images/02-double-2x.png";
 import x2BG from "../assets/cards/02x2light.png";
 import x2BG2 from "../assets/cards/02x2konfetti.png";
@@ -108,6 +109,7 @@ const cards = [
     image: {
       wbp: double1xWBP,
       png: double1xPNG,
+      wbp2x: double2xWBP,
       png2x: double2xPNG,
       width: 72,
       height: 72,
