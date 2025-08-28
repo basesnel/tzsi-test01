@@ -13,9 +13,15 @@ import double3xWBP from "../assets/cards/images/02-double-3x.webp";
 import double3xPNG from "../assets/cards/images/02-double-3x.png";
 // import x2BG from "../assets/cards/02x2light.png";
 // import x2BG2 from "../assets/cards/02x2konfetti.png";
-import zeroWBP from "../assets/cards/03zero.webp";
+import zero1xWBP from "../assets/cards/images/03-zero-1x.webp";
+// import double1xPNG from "../assets/cards/images/02-double-1x.png";
+// import double2xWBP from "../assets/cards/images/02-double-2x.webp";
+// import double2xPNG from "../assets/cards/images/02-double-2x.png";
+// import double3xWBP from "../assets/cards/images/02-double-3x.webp";
+// import double3xPNG from "../assets/cards/images/02-double-3x.png";
+// import zeroWBP from "../assets/cards/03zero.webp";
 import zeroPNG from "../assets/cards/03zero.png";
-import zeroBG from "../assets/cards/03zerolight.png";
+// import zeroBG from "../assets/cards/03zerolight.png";
 import bombWBP from "../assets/cards/04bomb.webp";
 import bombPNG from "../assets/cards/04bomb.png";
 import bombBG from "../assets/cards/04bomblight.png";
@@ -122,8 +128,14 @@ const cards = [
   },
   {
     id: 7,
-    bg: zeroBG,
-    image: { wbp: zeroWBP, png: zeroPNG, width: 53, height: 73, label: "Zero" },
+    // bg: zeroBG,
+    image: {
+      wbp: zero1xWBP,
+      png: zeroPNG,
+      width: 53,
+      height: 73,
+      label: "Zero",
+    },
   },
   {
     id: 8,
