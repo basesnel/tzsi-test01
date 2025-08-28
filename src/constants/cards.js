@@ -17,10 +17,8 @@ import zero1xWBP from "../assets/cards/images/03-zero-1x.webp";
 import zero1xPNG from "../assets/cards/images/03-zero-1x.png";
 import zero2xWBP from "../assets/cards/images/03-zero-2x.webp";
 import zero2xPNG from "../assets/cards/images/03-zero-2x.png";
-// import double3xWBP from "../assets/cards/images/02-double-3x.webp";
+import zero3xWBP from "../assets/cards/images/03-zero-3x.webp";
 import zero3xPNG from "../assets/cards/images/03-zero-3x.png";
-// import zeroWBP from "../assets/cards/03zero.webp";
-// import zeroPNG from "../assets/cards/03zero.png";
 // import zeroBG from "../assets/cards/03zerolight.png";
 import bombWBP from "../assets/cards/04bomb.webp";
 import bombPNG from "../assets/cards/04bomb.png";
@@ -134,6 +132,7 @@ const cards = [
       png: zero1xPNG,
       wbp2x: zero2xWBP,
       png2x: zero2xPNG,
+      wbp3x: zero3xWBP,
       png3x: zero3xPNG,
       width: 53,
       height: 73,
