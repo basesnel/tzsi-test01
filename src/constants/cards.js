@@ -16,7 +16,7 @@ import double3xPNG from "../assets/cards/images/02-double-3x.png";
 import zero1xWBP from "../assets/cards/images/03-zero-1x.webp";
 import zero1xPNG from "../assets/cards/images/03-zero-1x.png";
 // import double2xWBP from "../assets/cards/images/02-double-2x.webp";
-// import double2xPNG from "../assets/cards/images/02-double-2x.png";
+import zero2xPNG from "../assets/cards/images/03-zero-2x.png";
 // import double3xWBP from "../assets/cards/images/02-double-3x.webp";
 // import double3xPNG from "../assets/cards/images/02-double-3x.png";
 // import zeroWBP from "../assets/cards/03zero.webp";
@@ -132,6 +132,7 @@ const cards = [
     image: {
       wbp: zero1xWBP,
       png: zero1xPNG,
+      png2x: zero2xPNG,
       width: 53,
       height: 73,
       label: "Zero",
