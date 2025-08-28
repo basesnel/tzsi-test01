@@ -20,6 +20,7 @@ import zero2xPNG from "../assets/cards/images/03-zero-2x.png";
 import zero3xWBP from "../assets/cards/images/03-zero-3x.webp";
 import zero3xPNG from "../assets/cards/images/03-zero-3x.png";
 // import zeroBG from "../assets/cards/03zerolight.png";
+import bomb1xWBP from "../assets/cards/images/04-bomb-1x.webp";
 import bombWBP from "../assets/cards/04bomb.webp";
 import bombPNG from "../assets/cards/04bomb.png";
 import bombBG from "../assets/cards/04bomblight.png";
@@ -142,7 +143,13 @@ const cards = [
   {
     id: 8,
     bg: bombBG,
-    image: { wbp: bombWBP, png: bombPNG, width: 88, height: 88, label: "Bomb" },
+    image: {
+      wbp: bomb1xWBP,
+      png: bombPNG,
+      width: 88,
+      height: 88,
+      label: "Bomb",
+    },
   },
   {
     id: 9,
