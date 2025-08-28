@@ -79,7 +79,7 @@ const Card = ({
           <Decor label={image.label} />
           <div className={styles[`icon-${image.label.toLowerCase()}`]}>
             <Image image={image} />
-            {amount && (
+            {!isNaN(amount) && (
               <span className={styles.amount}>{formatAmount(amount)}</span>
             )}
           </div>
