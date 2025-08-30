@@ -31,6 +31,7 @@ import bomb3xPNG from "../assets/cards/images/04-bomb-3x.png";
 import bombBG from "../assets/cards/04bomblight.png";
 import stopWBP from "../assets/cards/images/05-stop-1x.webp";
 import stopPNG from "../assets/cards/images/05-stop-1x.png";
+import stopPNG2x from "../assets/cards/images/05-stop-2x.png";
 import stopBG from "../assets/cards/05stoplight.png";
 
 const cards = [
@@ -163,7 +164,14 @@ const cards = [
   {
     id: 9,
     bg: stopBG,
-    image: { wbp: stopWBP, png: stopPNG, width: 48, height: 48, label: "Stop" },
+    image: {
+      wbp: stopWBP,
+      png: stopPNG,
+      png2x: stopPNG2x,
+      width: 48,
+      height: 48,
+      label: "Stop",
+    },
   },
 ];
 
