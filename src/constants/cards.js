@@ -31,7 +31,8 @@ import bomb3xPNG from "../assets/cards/images/04-bomb-3x.png";
 import bombBG from "../assets/cards/04bomblight.png";
 import stopWBP from "../assets/cards/images/05-stop-1x.webp";
 import stopPNG from "../assets/cards/images/05-stop-1x.png";
-import stopPNG2x from "../assets/cards/images/05-stop-2x.png";
+import stop2xWBP from "../assets/cards/images/05-stop-2x.webp";
+import stop2xPNG from "../assets/cards/images/05-stop-2x.png";
 import stopBG from "../assets/cards/05stoplight.png";
 
 const cards = [
@@ -167,7 +168,8 @@ const cards = [
     image: {
       wbp: stopWBP,
       png: stopPNG,
-      png2x: stopPNG2x,
+      wbp2x: stop2xWBP,
+      png2x: stop2xPNG,
       width: 48,
       height: 48,
       label: "Stop",
