@@ -8,9 +8,9 @@ import {
   buttonBomb,
   buttonDefuse,
 } from "../../constants/modal";
+import useCloseModal from "../../hooks/useCloseModal";
 
 import styles from "./styles.module.css";
-import useCloseModal from "../../hooks/useCloseModal";
 
 const Modal = ({ showModal, setShowModal, gameState, count }) => {
   const closeModal = () => {

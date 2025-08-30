@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "../Image/Image";
-import formatAmount from "../../helpers/formatAmount";
 import Modal from "../Modal/Modal";
+import formatAmount from "../../helpers/formatAmount";
 
 import styles from "./styles.module.css";
 
@@ -89,7 +89,7 @@ const Card = ({
         showModal={showModal}
         setShowModal={setShowModal}
         gameState={gameState}
-        count={count}
+        count={formatAmount(count)}
       />
     </>
   );
