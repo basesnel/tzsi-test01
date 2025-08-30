@@ -33,6 +33,7 @@ import stopWBP from "../assets/cards/images/05-stop-1x.webp";
 import stopPNG from "../assets/cards/images/05-stop-1x.png";
 import stop2xWBP from "../assets/cards/images/05-stop-2x.webp";
 import stop2xPNG from "../assets/cards/images/05-stop-2x.png";
+import stop3xWBP from "../assets/cards/images/05-stop-3x.webp";
 import stop3xPNG from "../assets/cards/images/05-stop-3x.png";
 import stopBG from "../assets/cards/05stoplight.png";
 
@@ -171,6 +172,7 @@ const cards = [
       png: stopPNG,
       wbp2x: stop2xWBP,
       png2x: stop2xPNG,
+      wbp3x: stop3xWBP,
       png3x: stop3xPNG,
       width: 48,
       height: 48,
