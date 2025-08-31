@@ -47,7 +47,7 @@
   transform: translate(-50%, -63%);
   width: 184%;
   height: 130%;
-  background: url("../../assets/cards/backgrounds/light-1x.png");
+  background-image: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -57,12 +57,16 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .cashLight {
-    background-image: url("../../assets/cards/backgrounds/light-2x.png"),
-      radial-gradient(
-        102% 100% at 50% 0%,
-        rgba(153, 85, 255, 1),
-        rgba(24, 26, 32, 1) 100%
-      );
+    background-image: url("../../assets/cards/backgrounds/light-2x.png");
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .container {
+    background-image: url("../../assets/cards/backgrounds/light-3x.png");
   }
 }
 
