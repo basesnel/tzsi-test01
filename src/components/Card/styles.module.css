@@ -65,7 +65,7 @@
   (-webkit-min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
-  .container {
+  .cashLight {
     background-image: url("../../assets/cards/backgrounds/light-3x.png");
   }
 }
@@ -271,6 +271,15 @@
   (min-resolution: 2dppx) {
   .bombLight {
     background-image: url("../../assets/cards/backgrounds/light-2x.png");
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .bombLight {
+    background-image: url("../../assets/cards/backgrounds/light-3x.png");
   }
 }
 
