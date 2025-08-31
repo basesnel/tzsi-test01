@@ -260,9 +260,18 @@
   transform: translate(-50%, -50%);
   width: 184%;
   height: 130%;
-  background: url("../../assets/cards/backgrounds/light-1x.png");
+  background-image: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bombLight {
+    background-image: url("../../assets/cards/backgrounds/light-2x.png");
+  }
 }
 
 .bombYellow {
