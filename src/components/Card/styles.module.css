@@ -47,8 +47,7 @@
   transform: translate(-50%, -63%);
   width: 184%;
   height: 130%;
-  /* background: url(/bgfields/01cashlight.png); */
-  background: url("../../assets/cards/backgrounds/01cashlight.png");
+  background: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -243,7 +242,7 @@
   transform: translate(-50%, -50%);
   width: 184%;
   height: 130%;
-  background: url("../../assets/cards/backgrounds/01cashlight.png");
+  background: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -255,8 +254,8 @@
   transform: translate(-50%, -50%);
   width: 184%;
   height: 130%;
-  -webkit-mask-image: url("../../assets/cards/backgrounds/01cashlight.png");
-  mask-image: url("../../assets/cards/backgrounds/01cashlight.png");
+  -webkit-mask-image: url("../../assets/cards/backgrounds/light-1x.png");
+  mask-image: url("../../assets/cards/backgrounds/light-1x.png");
   background: rgba(230, 230, 16, 1);
   filter: saturate(100%) contrast(200%) brightness(100%);
   opacity: 0.3;
@@ -269,8 +268,8 @@
   transform: translate(-50%, -50%);
   width: 184%;
   height: 130%;
-  -webkit-mask-image: url("../../assets/cards/backgrounds/01cashlight.png");
-  mask-image: url("../../assets/cards/backgrounds/01cashlight.png");
+  -webkit-mask-image: url("../../assets/cards/backgrounds/light-1x.png");
+  mask-image: url("../../assets/cards/backgrounds/light-1x.png");
   background: rgba(230, 20, 16, 1);
   filter: saturate(100%) contrast(200%) brightness(100%);
 }
@@ -282,8 +281,8 @@
   transform: translate(-50%, -50%);
   width: 135%;
   height: 92%;
-  -webkit-mask-image: url("../../assets/cards/backgrounds/01cashlight.png");
-  mask-image: url("../../assets/cards/backgrounds/01cashlight.png");
+  -webkit-mask-image: url("../../assets/cards/backgrounds/light-1x.png");
+  mask-image: url("../../assets/cards/backgrounds/light-1x.png");
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   background: rgba(255, 0, 0, 1);
