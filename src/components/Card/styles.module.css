@@ -52,6 +52,20 @@
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .cashLight {
+    background-image: url("../../assets/cards/backgrounds/light-2x.png"),
+      radial-gradient(
+        102% 100% at 50% 0%,
+        rgba(153, 85, 255, 1),
+        rgba(24, 26, 32, 1) 100%
+      );
+  }
+}
+
 .cashGreenTop {
   position: absolute;
   inset: 0;
