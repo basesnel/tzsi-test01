@@ -128,6 +128,15 @@
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .doubleLight {
+    background-image: url("../../assets/cards/backgrounds/light-3x.png");
+  }
+}
+
 .doubleBlue {
   position: absolute;
   inset: 0;
