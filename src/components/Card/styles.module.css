@@ -126,6 +126,8 @@
   background: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+  mix-blend-mode: overlay;
+  /* fill-opacity: 0.5; */
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -151,7 +153,7 @@
   inset: 0;
   border-radius: 50%;
   background: rgba(36, 99, 224, 1);
-  filter: blur(25px);
+  filter: blur(18px);
 }
 
 .doubleWhite {
@@ -173,11 +175,12 @@
   transform: translate(-50%, -50%);
   width: 170%;
   height: 170%;
-  background: url(/bgfields/02x2konfetti.png);
+  /* background: url(/bgfields/02x2konfetti.png); */
+  background: url("../../assets/cards/backgrounds/confetti-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
-  filter: contrast(300%) brightness(150%);
+  mix-blend-mode: color-dodge;
+  fill-opacity: 0.5;
 }
 
 .doubleSecondWhite {
