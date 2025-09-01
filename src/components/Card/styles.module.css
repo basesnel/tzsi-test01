@@ -226,10 +226,11 @@
   transform: translate(-50%, -50%);
   width: 184%;
   height: 130%;
-  background: url(/bgfields/03zerolight.png);
+  background-image: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.3;
+  mix-blend-mode: overlay;
+  /* opacity: 0.3; */
 }
 
 .zeroYellowTop {

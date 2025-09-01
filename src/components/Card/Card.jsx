@@ -128,10 +128,10 @@ const Decor = ({ label }) => {
       return (
         <>
           <div className={styles.cashFirstBG} />
-          <div className={styles.zeroLight} />
+          <div className={styles.zeroSecondBG} />
           <div className={styles.zeroYellowTop} />
           <div className={styles.zeroYellowBottom} />
-          <div className={styles.zeroSecondBG} />
+          <div className={styles.zeroLight} />
           <div className={styles.cashThirdBG} />
         </>
       );
