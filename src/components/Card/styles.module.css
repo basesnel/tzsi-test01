@@ -178,6 +178,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: color-dodge;
+  opacity: 0.5;
 }
 
 @media (min-device-pixel-ratio: 2),
