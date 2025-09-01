@@ -230,7 +230,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: overlay;
-  /* opacity: 0.3; */
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .zeroLight {
+    background-image: url("../../assets/cards/backgrounds/light-2x.png");
+  }
 }
 
 .zeroYellowTop {
