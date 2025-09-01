@@ -293,6 +293,15 @@
   opacity: 0.6;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .stopLight {
+    background-image: url("../../assets/cards/backgrounds/light-2x.png");
+  }
+}
+
 .stopdBG {
   position: absolute;
   inset: 0;
