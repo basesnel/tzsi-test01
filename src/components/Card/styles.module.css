@@ -174,7 +174,7 @@
   transform: translate(-50%, -50%);
   width: 170%;
   height: 170%;
-  background-image: url("../../assets/cards/backgrounds/confetti-1x.png");
+  background-image: url("../../assets/cards/backgrounds/konfetti-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: color-dodge;
@@ -185,7 +185,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .doubleKonfetti {
-    background-image: url("../../assets/cards/backgrounds/confetti-2x.png");
+    background-image: url("../../assets/cards/backgrounds/konfetti-2x.png");
   }
 }
 
@@ -194,7 +194,7 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
   .doubleKonfetti {
-    background-image: url("../../assets/cards/backgrounds/confetti-3x.png");
+    background-image: url("../../assets/cards/backgrounds/konfetti-3x.png");
   }
 }
 
