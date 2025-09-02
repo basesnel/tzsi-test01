@@ -15,7 +15,7 @@ const Game = () => {
   const [tips, setTips] = useState(initTips);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.game}>
       <Navbar />
       <Title title="roll craft" />
       <Counter counter={count} />

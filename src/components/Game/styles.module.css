@@ -1,4 +1,4 @@
-.container {
+.game {
   margin: 0 auto;
   padding: 0 16px;
   min-width: 320px;
@@ -18,7 +18,7 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .container {
+  .game {
     background-image: url("../../assets/game/pattern-2x.png"),
       radial-gradient(
         102% 100% at 50% 0%,
@@ -32,7 +32,7 @@
   (-webkit-min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
-  .container {
+  .game {
     background-image: url("../../assets/game/pattern-3x.png"),
       radial-gradient(
         102% 100% at 50% 0%,
