@@ -101,11 +101,11 @@ const Decor = ({ label }) => {
       return (
         <>
           <div className={styles.cashFirstBG} />
-          <div className={styles.cashLight} />
-          <div className={styles.cashGreenTop} />
-          <div className={styles.cashYellow} />
-          <div className={styles.cashGreenBottom} />
+          {/* <div className={styles.cashYellow} /> */}
           <div className={styles.cashSecondBG} />
+          <div className={styles.cashGreenTop} />
+          <div className={styles.cashGreenBottom} />
+          <div className={styles.cashLight} />
           <div className={styles.cashThirdBG} />
         </>
       );
