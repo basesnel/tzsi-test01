@@ -358,6 +358,19 @@
   }
 }
 
+.bombLightOrigin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 184%;
+  height: 130%;
+  background-image: url("../../assets/cards/backgrounds/bombLight-1x.png"),
+    linear-gradient(to right, #e13030, #e13030);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bombYellow {
   position: absolute;
   top: 50%;
