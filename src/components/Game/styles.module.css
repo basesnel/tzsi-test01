@@ -3,7 +3,9 @@
   padding: 0 16px;
   min-width: 320px;
   max-width: 428px;
-  background-image: url("../../assets/game/pattern-1x.png"),
+  position: relative;
+  overflow: hidden;
+  /* background-image: url("../../assets/game/pattern-1x.png"),
     radial-gradient(
       102% 100% at 50% 0%,
       rgba(153, 85, 255, 1),
@@ -11,10 +13,10 @@
     );
   background-size: 444px;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
-@media (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -40,4 +42,41 @@
         rgba(24, 26, 32, 1) 100%
       );
   }
+} */
+
+.purple {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    102% 100% at 50% 0%,
+    rgba(153, 85, 255, 1),
+    rgba(24, 26, 32, 1) 100%
+  );
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.purpleLight {
+  position: absolute;
+  top: -228px;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1.5;
+  background-color: #9955ff;
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: -1;
+}
+
+.stars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 104%;
+  aspect-ratio: 1;
+  background-image: url("../../assets/game/pattern-1x.png");
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
 }

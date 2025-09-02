@@ -16,6 +16,9 @@ const Game = () => {
 
   return (
     <div className={styles.game}>
+      <div className={styles.purple} />
+      <div className={styles.purpleLight} />
+      <div className={styles.stars} />
       <Navbar />
       <Title title="roll craft" />
       <Counter counter={count} />
