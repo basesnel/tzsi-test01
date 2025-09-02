@@ -70,11 +70,11 @@
 
 .stars {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   width: 104%;
   aspect-ratio: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -2%);
   background-image: url("../../assets/game/pattern-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
