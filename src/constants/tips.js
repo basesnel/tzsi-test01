@@ -8,6 +8,7 @@ import doubleWBP from "../assets/tips/02-double-1x.webp";
 import doublePNG from "../assets/tips/02-double-1x.png";
 import double2xWBP from "../assets/tips/02-double-2x.webp";
 import double2xPNG from "../assets/tips/02-double-2x.png";
+import double3xWBP from "../assets/tips/02-double-3x.webp";
 import zeroWBP from "../assets/tips/03zero.webp";
 import zeroPNG from "../assets/tips/03zero.png";
 import bombWBP from "../assets/tips/04bomb.webp";
@@ -39,6 +40,7 @@ const tips = [
       png: doublePNG,
       wbp2x: double2xWBP,
       png2x: double2xPNG,
+      wbp3x: double3xWBP,
       width: 32,
       height: 32,
       label: "Double",
