@@ -4,45 +4,37 @@ import cash2xWBP from "../assets/cards/images/01-cash-2x.webp";
 import cash2xPNG from "../assets/cards/images/01-cash-2x.png";
 import cash3xWBP from "../assets/cards/images/01-cash-3x.webp";
 import cash3xPNG from "../assets/cards/images/01-cash-3x.png";
-// import cashBG from "../assets/cards/01cashlight.png";
 import double1xWBP from "../assets/cards/images/02-double-1x.webp";
 import double1xPNG from "../assets/cards/images/02-double-1x.png";
 import double2xWBP from "../assets/cards/images/02-double-2x.webp";
 import double2xPNG from "../assets/cards/images/02-double-2x.png";
 import double3xWBP from "../assets/cards/images/02-double-3x.webp";
 import double3xPNG from "../assets/cards/images/02-double-3x.png";
-// import x2BG from "../assets/cards/02x2light.png";
-// import x2BG2 from "../assets/cards/02x2konfetti.png";
 import zero1xWBP from "../assets/cards/images/03-zero-1x.webp";
 import zero1xPNG from "../assets/cards/images/03-zero-1x.png";
 import zero2xWBP from "../assets/cards/images/03-zero-2x.webp";
 import zero2xPNG from "../assets/cards/images/03-zero-2x.png";
 import zero3xWBP from "../assets/cards/images/03-zero-3x.webp";
 import zero3xPNG from "../assets/cards/images/03-zero-3x.png";
-// import zeroBG from "../assets/cards/03zerolight.png";
 import bomb1xWBP from "../assets/cards/images/04-bomb-1x.webp";
 import bomb1xPNG from "../assets/cards/images/04-bomb-1x.png";
 import bomb2xWBP from "../assets/cards/images/04-bomb-2x.webp";
 import bomb2xPNG from "../assets/cards/images/04-bomb-2x.png";
 import bomb3xWBP from "../assets/cards/images/04-bomb-3x.webp";
 import bomb3xPNG from "../assets/cards/images/04-bomb-3x.png";
-// import bombWBP from "../assets/cards/04bomb.webp";
-// import bombPNG from "../assets/cards/04bomb.png";
-// import bombBG from "../assets/cards/04bomblight.png";
 import stopWBP from "../assets/cards/images/05-stop-1x.webp";
 import stopPNG from "../assets/cards/images/05-stop-1x.png";
 import stop2xWBP from "../assets/cards/images/05-stop-2x.webp";
 import stop2xPNG from "../assets/cards/images/05-stop-2x.png";
 import stop3xWBP from "../assets/cards/images/05-stop-3x.webp";
 import stop3xPNG from "../assets/cards/images/05-stop-3x.png";
-// import stopBG from "../assets/cards/05stoplight.png";
 
 const cards = [
   {
     id: 1,
     amount: 100,
-    // bg: cashBG,
     image: {
+      label: "Cash",
       wbp: cash1xWBP,
       png: cash1xPNG,
       wbp2x: cash2xWBP,
@@ -51,14 +43,13 @@ const cards = [
       png3x: cash3xPNG,
       width: 72,
       height: 72,
-      label: "Cash",
     },
   },
   {
     id: 2,
     amount: 500,
-    // bg: cashBG,
     image: {
+      label: "Cash",
       wbp: cash1xWBP,
       png: cash1xPNG,
       wbp2x: cash2xWBP,
@@ -67,14 +58,13 @@ const cards = [
       png3x: cash3xPNG,
       width: 72,
       height: 72,
-      label: "Cash",
     },
   },
   {
     id: 3,
     amount: 1000,
-    // bg: cashBG,
     image: {
+      label: "Cash",
       wbp: cash1xWBP,
       png: cash1xPNG,
       wbp2x: cash2xWBP,
@@ -83,14 +73,13 @@ const cards = [
       png3x: cash3xPNG,
       width: 72,
       height: 72,
-      label: "Cash",
     },
   },
   {
     id: 4,
     amount: 10000,
-    // bg: cashBG,
     image: {
+      label: "Cash",
       wbp: cash1xWBP,
       png: cash1xPNG,
       wbp2x: cash2xWBP,
@@ -99,14 +88,13 @@ const cards = [
       png3x: cash3xPNG,
       width: 72,
       height: 72,
-      label: "Cash",
     },
   },
   {
     id: 5,
     amount: 1000000,
-    // bg: cashBG,
     image: {
+      label: "Cash",
       wbp: cash1xWBP,
       png: cash1xPNG,
       wbp2x: cash2xWBP,
@@ -115,14 +103,12 @@ const cards = [
       png3x: cash3xPNG,
       width: 72,
       height: 72,
-      label: "Cash",
     },
   },
   {
     id: 6,
-    // bg: x2BG,
-    // bg2: x2BG2,
     image: {
+      label: "Double",
       wbp: double1xWBP,
       png: double1xPNG,
       wbp2x: double2xWBP,
@@ -131,13 +117,12 @@ const cards = [
       png3x: double3xPNG,
       width: 72,
       height: 72,
-      label: "Double",
     },
   },
   {
     id: 7,
-    // bg: zeroBG,
     image: {
+      label: "Zero",
       wbp: zero1xWBP,
       png: zero1xPNG,
       wbp2x: zero2xWBP,
@@ -146,13 +131,12 @@ const cards = [
       png3x: zero3xPNG,
       width: 53,
       height: 73,
-      label: "Zero",
     },
   },
   {
     id: 8,
-    // bg: bombBG,
     image: {
+      label: "Bomb",
       wbp: bomb1xWBP,
       png: bomb1xPNG,
       wbp2x: bomb2xWBP,
@@ -161,13 +145,12 @@ const cards = [
       png3x: bomb3xPNG,
       width: 88,
       height: 88,
-      label: "Bomb",
     },
   },
   {
     id: 9,
-    // bg: stopBG,
     image: {
+      label: "Stop",
       wbp: stopWBP,
       png: stopPNG,
       wbp2x: stop2xWBP,
@@ -176,7 +159,6 @@ const cards = [
       png3x: stop3xPNG,
       width: 48,
       height: 48,
-      label: "Stop",
     },
   },
 ];
