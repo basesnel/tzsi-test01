@@ -1,5 +1,6 @@
-import cashWBP from "../assets/tips/01-cash-1x.webp";
-import cashPNG from "../assets/tips/01-cash-1x.png";
+import cash1xWBP from "../assets/tips/01-cash-1x.webp";
+import cash1xPNG from "../assets/tips/01-cash-1x.png";
+import cash2xWBP from "../assets/tips/01-cash-2x.webp";
 import x2WBP from "../assets/tips/02x2.webp";
 import x2PNG from "../assets/tips/02x2.png";
 import zeroWBP from "../assets/tips/03zero.webp";
@@ -13,7 +14,14 @@ const tips = [
   {
     id: 1,
     amount: 5,
-    image: { wbp: cashWBP, png: cashPNG, width: 32, height: 32, label: "Cash" },
+    image: {
+      label: "Cash",
+      wbp: cash1xWBP,
+      png: cash1xPNG,
+      wbp2x: cash2xWBP,
+      width: 32,
+      height: 32,
+    },
   },
   {
     id: 2,
