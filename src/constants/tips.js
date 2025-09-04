@@ -12,6 +12,7 @@ import double3xWBP from "../assets/tips/02-double-3x.webp";
 import double3xPNG from "../assets/tips/02-double-3x.png";
 import zeroWBP from "../assets/tips/03zero.webp";
 import zeroPNG from "../assets/tips/03zero.png";
+import zero1xPNG from "../assets/tips/03-zero-1x.png";
 import bombWBP from "../assets/tips/04bomb.webp";
 import bombPNG from "../assets/tips/04bomb.png";
 import stopWBP from "../assets/tips/05stop.webp";
@@ -51,7 +52,13 @@ const tips = [
   {
     id: 3,
     amount: 1,
-    image: { wbp: zeroWBP, png: zeroPNG, width: 32, height: 32, label: "Zero" },
+    image: {
+      wbp: zeroWBP,
+      png: zero1xPNG,
+      width: 32,
+      height: 32,
+      label: "Zero",
+    },
   },
   {
     id: 4,
