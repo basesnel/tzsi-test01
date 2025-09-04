@@ -18,6 +18,7 @@ import zero3xWBP from "../assets/tips/03-zero-3x.webp";
 import zero3xPNG from "../assets/tips/03-zero-3x.png";
 import bomb1xWBP from "../assets/tips/04-bomb-1x.webp";
 import bomb1xPNG from "../assets/tips/04-bomb-1x.png";
+import bomb2xWBP from "../assets/tips/04-bomb-2x.webp";
 import bomb2xPNG from "../assets/tips/04-bomb-2x.png";
 import stopWBP from "../assets/tips/05stop.webp";
 import stopPNG from "../assets/tips/05stop.png";
@@ -75,6 +76,7 @@ const tips = [
       label: "Bomb",
       wbp: bomb1xWBP,
       png: bomb1xPNG,
+      wbp2x: bomb2xWBP,
       png2x: bomb2xPNG,
       width: 32,
       height: 32,
