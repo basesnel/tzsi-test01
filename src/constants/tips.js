@@ -26,6 +26,7 @@ import stop1xWBP from "../assets/tips/05-stop-1x.webp";
 import stop1xPNG from "../assets/tips/05-stop-1x.png";
 import stop2xWBP from "../assets/tips/05-stop-2x.webp";
 import stop2xPNG from "../assets/tips/05-stop-2x.png";
+import stop3xWBP from "../assets/tips/05-stop-3x.webp";
 import stop3xPNG from "../assets/tips/05-stop-3x.png";
 
 const tips = [
@@ -48,6 +49,7 @@ const tips = [
     id: 2,
     amount: 1,
     image: {
+      label: "Double",
       wbp: double1xWBP,
       png: double1xPNG,
       wbp2x: double2xWBP,
@@ -56,7 +58,6 @@ const tips = [
       png3x: double3xPNG,
       width: 32,
       height: 32,
-      label: "Double",
     },
   },
   {
@@ -93,14 +94,15 @@ const tips = [
     id: 5,
     amount: 1,
     image: {
+      label: "Stop",
       wbp: stop1xWBP,
       png: stop1xPNG,
       wbp2x: stop2xWBP,
       png2x: stop2xPNG,
+      wbp3x: stop3xWBP,
       png3x: stop3xPNG,
       width: 32,
       height: 32,
-      label: "Stop",
     },
   },
 ];
