@@ -23,7 +23,7 @@ import bomb2xPNG from "../assets/tips/04-bomb-2x.png";
 import bomb3xWBP from "../assets/tips/04-bomb-3x.webp";
 import bomb3xPNG from "../assets/tips/04-bomb-3x.png";
 import stopWBP from "../assets/tips/05stop.webp";
-import stopPNG from "../assets/tips/05stop.png";
+import stop1xPNG from "../assets/tips/05-stop-1x.png";
 
 const tips = [
   {
@@ -89,7 +89,13 @@ const tips = [
   {
     id: 5,
     amount: 1,
-    image: { wbp: stopWBP, png: stopPNG, width: 32, height: 32, label: "Stop" },
+    image: {
+      wbp: stopWBP,
+      png: stop1xPNG,
+      width: 32,
+      height: 32,
+      label: "Stop",
+    },
   },
 ];
 
