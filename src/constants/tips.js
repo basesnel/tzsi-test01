@@ -24,6 +24,7 @@ import bomb3xWBP from "../assets/tips/04-bomb-3x.webp";
 import bomb3xPNG from "../assets/tips/04-bomb-3x.png";
 import stop1xWBP from "../assets/tips/05-stop-1x.webp";
 import stop1xPNG from "../assets/tips/05-stop-1x.png";
+import stop2xPNG from "../assets/tips/05-stop-2x.png";
 
 const tips = [
   {
@@ -92,6 +93,7 @@ const tips = [
     image: {
       wbp: stop1xWBP,
       png: stop1xPNG,
+      png2x: stop2xPNG,
       width: 32,
       height: 32,
       label: "Stop",
