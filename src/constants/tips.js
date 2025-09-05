@@ -26,6 +26,7 @@ import stop1xWBP from "../assets/tips/05-stop-1x.webp";
 import stop1xPNG from "../assets/tips/05-stop-1x.png";
 import stop2xWBP from "../assets/tips/05-stop-2x.webp";
 import stop2xPNG from "../assets/tips/05-stop-2x.png";
+import stop3xPNG from "../assets/tips/05-stop-3x.png";
 
 const tips = [
   {
@@ -96,6 +97,7 @@ const tips = [
       png: stop1xPNG,
       wbp2x: stop2xWBP,
       png2x: stop2xPNG,
+      png3x: stop3xPNG,
       width: 32,
       height: 32,
       label: "Stop",
