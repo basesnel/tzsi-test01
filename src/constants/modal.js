@@ -1,5 +1,6 @@
 import bombWBP from "../assets/modal/01-bomb-1x.webp";
-import bombPNG from "../assets/modal/01-bomb-1x.png";
+import bomb1xPNG from "../assets/modal/01-bomb-1x.png";
+import bomb2xPNG from "../assets/modal/01-bomb-2x.png";
 import stopWBP from "../assets/modal/02-stop-1x.webp";
 import stopPNG from "../assets/modal/02-stop-1x.png";
 import cashWBP from "../assets/modal/03-cash-1x.webp";
@@ -11,7 +12,8 @@ import buttonDefusePNG from "../assets/modal/05-defuse-1x.png";
 
 const bomb = {
   wbp: bombWBP,
-  png: bombPNG,
+  png: bomb1xPNG,
+  png2x: bomb2xPNG,
   width: 120,
   height: 120,
   label: "Bomb",
