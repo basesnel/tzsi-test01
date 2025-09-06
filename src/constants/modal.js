@@ -10,8 +10,9 @@ import stop2xWBP from "../assets/modal/02-stop-2x.webp";
 import stop2xPNG from "../assets/modal/02-stop-2x.png";
 import stop3xWBP from "../assets/modal/02-stop-3x.webp";
 import stop3xPNG from "../assets/modal/02-stop-3x.png";
-import cashWBP from "../assets/modal/03-cash-1x.webp";
-import cashPNG from "../assets/modal/03-cash-1x.png";
+import cash1xWBP from "../assets/modal/03-cash-1x.webp";
+import cash1xPNG from "../assets/modal/03-cash-1x.png";
+import cash2xPNG from "../assets/modal/03-cash-2x.png";
 import buttonBombWBP from "../assets/modal/04-bomb-1x.webp";
 import buttonBombPNG from "../assets/modal/04-bomb-1x.png";
 import buttonDefuseWBP from "../assets/modal/05-defuse-1x.webp";
@@ -42,8 +43,9 @@ const stop = {
 };
 
 const cash = {
-  wbp: cashWBP,
-  png: cashPNG,
+  wbp: cash1xWBP,
+  png: cash1xPNG,
+  png2x: cash2xPNG,
   width: 48,
   height: 48,
   label: "Cash",
