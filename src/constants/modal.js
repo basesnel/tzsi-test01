@@ -4,8 +4,9 @@ import bomb2xWBP from "../assets/modal/01-bomb-2x.webp";
 import bomb2xPNG from "../assets/modal/01-bomb-2x.png";
 import bomb3xWBP from "../assets/modal/01-bomb-3x.webp";
 import bomb3xPNG from "../assets/modal/01-bomb-3x.png";
-import stopWBP from "../assets/modal/02-stop-1x.webp";
-import stopPNG from "../assets/modal/02-stop-1x.png";
+import stop1xWBP from "../assets/modal/02-stop-1x.webp";
+import stop1xPNG from "../assets/modal/02-stop-1x.png";
+import stop2xPNG from "../assets/modal/02-stop-2x.png";
 import cashWBP from "../assets/modal/03-cash-1x.webp";
 import cashPNG from "../assets/modal/03-cash-1x.png";
 import buttonBombWBP from "../assets/modal/04-bomb-1x.webp";
@@ -26,8 +27,9 @@ const bomb = {
 };
 
 const stop = {
-  wbp: stopWBP,
-  png: stopPNG,
+  wbp: stop1xWBP,
+  png: stop1xPNG,
+  png2x: stop2xPNG,
   width: 96,
   height: 96,
   label: "Stop",
