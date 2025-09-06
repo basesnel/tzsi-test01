@@ -8,6 +8,7 @@ import stop1xWBP from "../assets/modal/02-stop-1x.webp";
 import stop1xPNG from "../assets/modal/02-stop-1x.png";
 import stop2xWBP from "../assets/modal/02-stop-2x.webp";
 import stop2xPNG from "../assets/modal/02-stop-2x.png";
+import stop3xWBP from "../assets/modal/02-stop-3x.webp";
 import stop3xPNG from "../assets/modal/02-stop-3x.png";
 import cashWBP from "../assets/modal/03-cash-1x.webp";
 import cashPNG from "../assets/modal/03-cash-1x.png";
@@ -33,6 +34,7 @@ const stop = {
   png: stop1xPNG,
   wbp2x: stop2xWBP,
   png2x: stop2xPNG,
+  wbp3x: stop3xWBP,
   png3x: stop3xPNG,
   width: 96,
   height: 96,
