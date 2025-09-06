@@ -12,6 +12,7 @@ import stop3xWBP from "../assets/modal/02-stop-3x.webp";
 import stop3xPNG from "../assets/modal/02-stop-3x.png";
 import cash1xWBP from "../assets/modal/03-cash-1x.webp";
 import cash1xPNG from "../assets/modal/03-cash-1x.png";
+import cash2xWBP from "../assets/modal/03-cash-2x.webp";
 import cash2xPNG from "../assets/modal/03-cash-2x.png";
 import buttonBombWBP from "../assets/modal/04-bomb-1x.webp";
 import buttonBombPNG from "../assets/modal/04-bomb-1x.png";
@@ -45,6 +46,7 @@ const stop = {
 const cash = {
   wbp: cash1xWBP,
   png: cash1xPNG,
+  wbp2x: cash2xWBP,
   png2x: cash2xPNG,
   width: 48,
   height: 48,
