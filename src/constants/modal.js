@@ -17,11 +17,14 @@ import cash2xPNG from "../assets/modal/03-cash-2x.png";
 import cash3xWBP from "../assets/modal/03-cash-3x.webp";
 import cash3xPNG from "../assets/modal/03-cash-3x.png";
 import buttonBombWBP from "../assets/modal/04-bomb-1x.webp";
-import buttonBombPNG from "../assets/modal/04-bomb-1x.png";
+import buttonBomb1xPNG from "../assets/modal/04-bomb-1x.png";
+import buttonBomb2xPNG from "../assets/modal/04-bomb-2x.png";
 import buttonDefuseWBP from "../assets/modal/05-defuse-1x.webp";
 import buttonDefusePNG from "../assets/modal/05-defuse-1x.png";
+// import buttonDefusePNG from "../assets/modal/05-defuse-2x.png";
 
 const bomb = {
+  label: "Bomb",
   wbp: bomb1xWBP,
   png: bomb1xPNG,
   wbp2x: bomb2xWBP,
@@ -30,10 +33,10 @@ const bomb = {
   png3x: bomb3xPNG,
   width: 120,
   height: 120,
-  label: "Bomb",
 };
 
 const stop = {
+  label: "Stop",
   wbp: stop1xWBP,
   png: stop1xPNG,
   wbp2x: stop2xWBP,
@@ -42,10 +45,10 @@ const stop = {
   png3x: stop3xPNG,
   width: 96,
   height: 96,
-  label: "Stop",
 };
 
 const cash = {
+  label: "Cash",
   wbp: cash1xWBP,
   png: cash1xPNG,
   wbp2x: cash2xWBP,
@@ -54,23 +57,23 @@ const cash = {
   png3x: cash3xPNG,
   width: 48,
   height: 48,
-  label: "Cash",
 };
 
 const buttonBomb = {
+  label: "Bomb",
   wbp: buttonBombWBP,
-  png: buttonBombPNG,
+  png: buttonBomb1xPNG,
+  png2x: buttonBomb2xPNG,
   width: 24,
   height: 24,
-  label: "Bomb",
 };
 
 const buttonDefuse = {
+  label: "Defuse",
   wbp: buttonDefuseWBP,
   png: buttonDefusePNG,
   width: 24,
   height: 24,
-  label: "Defuse",
 };
 
 export { bomb, stop, cash, buttonBomb, buttonDefuse };
