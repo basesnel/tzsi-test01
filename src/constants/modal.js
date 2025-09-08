@@ -16,8 +16,9 @@ import cash2xWBP from "../assets/modal/03-cash-2x.webp";
 import cash2xPNG from "../assets/modal/03-cash-2x.png";
 import cash3xWBP from "../assets/modal/03-cash-3x.webp";
 import cash3xPNG from "../assets/modal/03-cash-3x.png";
-import buttonBombWBP from "../assets/modal/04-bomb-1x.webp";
+import buttonBomb1xWBP from "../assets/modal/04-bomb-1x.webp";
 import buttonBomb1xPNG from "../assets/modal/04-bomb-1x.png";
+import buttonBomb2xWBP from "../assets/modal/04-bomb-2x.webp";
 import buttonBomb2xPNG from "../assets/modal/04-bomb-2x.png";
 import buttonDefuseWBP from "../assets/modal/05-defuse-1x.webp";
 import buttonDefusePNG from "../assets/modal/05-defuse-1x.png";
@@ -61,8 +62,9 @@ const cash = {
 
 const buttonBomb = {
   label: "Bomb",
-  wbp: buttonBombWBP,
+  wbp: buttonBomb1xWBP,
   png: buttonBomb1xPNG,
+  wbp2x: buttonBomb2xWBP,
   png2x: buttonBomb2xPNG,
   width: 24,
   height: 24,
