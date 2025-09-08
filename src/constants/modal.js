@@ -26,6 +26,7 @@ import buttonDefuse1xWBP from "../assets/modal/05-defuse-1x.webp";
 import buttonDefuse1xPNG from "../assets/modal/05-defuse-1x.png";
 import buttonDefuse2xWBP from "../assets/modal/05-defuse-2x.webp";
 import buttonDefuse2xPNG from "../assets/modal/05-defuse-2x.png";
+import buttonDefuse3xWBP from "../assets/modal/05-defuse-3x.webp";
 import buttonDefuse3xPNG from "../assets/modal/05-defuse-3x.png";
 
 const bomb = {
@@ -82,6 +83,7 @@ const buttonDefuse = {
   png: buttonDefuse1xPNG,
   wbp2x: buttonDefuse2xWBP,
   png2x: buttonDefuse2xPNG,
+  wbp3x: buttonDefuse3xWBP,
   png3x: buttonDefuse3xPNG,
   width: 24,
   height: 24,
