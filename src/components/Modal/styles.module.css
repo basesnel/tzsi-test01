@@ -39,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/bgmodal/modal-light-1x.png);
+  background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
