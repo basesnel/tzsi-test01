@@ -54,6 +54,15 @@
   }
 }
 
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .lightight {
+    background-image: url("../../assets/modal/backgrounds/modal-light-3x.png");
+  }
+}
+
 .light::before {
   content: "";
   position: absolute;
