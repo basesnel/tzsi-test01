@@ -103,6 +103,15 @@
   z-index: -1;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .stopLight {
+    background-image: url("../../assets/modal/backgrounds/modal-light-2x.png");
+  }
+}
+
 .stopLight::before {
   content: "";
   position: absolute;
