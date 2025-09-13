@@ -138,8 +138,8 @@
   border-radius: 50%;
   background: rgba(225, 48, 48, 1);
   filter: blur(30px);
-  -webkit-mask-image: url(/bgmodal/modal-light-1x.png);
-  mask-image: url(/bgmodal/modal-light-1x.png);
+  -webkit-mask-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
+  mask-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
   opacity: 0.8;
   z-index: -2;
 }
@@ -164,7 +164,11 @@
   font-weight: 600;
   text-align: center;
   color: rgba(255, 230, 230, 1);
-  text-shadow: 0px 0.75px 9px rgba(3254, 44, 85, 1);
+  text-shadow: 0px 0.75px 9px rgba(254, 44, 85, 1);
+}
+
+.titleOver {
+  text-shadow: 0px 0.75px 9px rgba(255, 254, 255, 1);
 }
 
 .text {

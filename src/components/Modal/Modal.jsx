@@ -78,7 +78,9 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
                     <Image image={stop} />
                   </div>
                   <section className={styles.content}>
-                    <h2 className={styles.title}>Game over!</h2>
+                    <h2 className={`${styles.title} ${styles.titleOver}`}>
+                      Game over!
+                    </h2>
                     <p className={`${styles.text} ${styles.firstText}`}>
                       You've reached the end of this run...
                     </p>
