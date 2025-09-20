@@ -92,44 +92,15 @@
   opacity: 0.89;
 }
 
-/* .light::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  filter: blur(61px);
-  z-index: -2;
-}
-
-.light::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 110px;
-  height: 60px;
-  border-radius: 50%;
-  background: rgba(225, 48, 48, 1);
-  filter: blur(15px);
-  opacity: 0.8;
-  z-index: -2;
-} */
-
 .stopLight {
   position: absolute;
-  width: 364px;
-  height: 260px;
-  top: 280px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  inset: 0;
+  z-index: -1;
   background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  mix-blend-mode: overlay;
+  opacity: 0.34;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -150,42 +121,15 @@
   }
 }
 
-.stopLight::before {
-  content: "";
+.stopWhite {
   position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  filter: blur(61px);
-  z-index: -2;
-}
-
-/* .bombRed {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  border-radius: 50%;
-  background: rgba(225, 48, 48, 1);
-  filter: blur(30px);
-  -webkit-mask-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
-  mask-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
-  opacity: 0.8;
-  z-index: -2;
-} */
-
-/* .bombWhite {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 1);
-  filter: blur(12px);
-  opacity: 0.7;
   z-index: -1;
-} */
+  width: 220px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(89px);
+}
 
 .title {
   margin-bottom: 8px;

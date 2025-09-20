@@ -86,7 +86,9 @@ const Bomb = ({ count }) => {
 const Stop = ({ count }) => {
   return (
     <>
-      <div className={styles.stopLight}>
+      <div className={styles.light}>
+        <div className={styles.stopWhite} />
+        <div className={styles.stopLight} />
         <Image image={stop} />
       </div>
       <section className={styles.content}>
