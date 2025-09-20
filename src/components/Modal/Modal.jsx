@@ -45,9 +45,9 @@ const Bomb = ({ count }) => {
   return (
     <>
       <div className={styles.light}>
-        {/* <div className={styles.back} /> */}
         <div className={styles.bombRed} />
-        <div className={styles.bombWhite} />
+        <div className={styles.bombRedMask} />
+        <div className={styles.bombLight} />
         <Image image={bomb} />
       </div>
       <section className={styles.content}>
