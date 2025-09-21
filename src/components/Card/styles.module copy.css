@@ -322,11 +322,11 @@
 /* Styles for card-stop background. -end- */
 
 /* Styles for card-bomb background. -start- */
-/* .bombFirstBG {
+.bombFirstBG {
   position: absolute;
   inset: 0;
   background: rgba(116, 21, 33, 0.9);
-} */
+}
 
 .bombLight {
   position: absolute;
@@ -335,7 +335,7 @@
   transform: translate(-50%, -50%);
   width: 184%;
   height: 130%;
-  background-image: url("../../assets/cards/backgrounds/bombLight-1x.png");
+  background-image: url("../../assets/cards/backgrounds/light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -345,7 +345,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .bombLight {
-    background-image: url("../../assets/cards/backgrounds/bombLight-2x.png");
+    background-image: url("../../assets/cards/backgrounds/light-2x.png");
   }
 }
 
@@ -354,18 +354,11 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
   .bombLight {
-    background-image: url("../../assets/cards/backgrounds/bombLight-3x.png");
+    background-image: url("../../assets/cards/backgrounds/light-3x.png");
   }
 }
 
-.bombRed {
-  position: absolute;
-  inset: 0;
-  background: rgba(225, 48, 48, 1);
-  mix-blend-mode: overlay;
-}
-
-/* .bombLightOrigin {
+.bombLightOrigin {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -451,7 +444,7 @@
   background: rgba(255, 255, 255, 1);
   filter: blur(5px);
   opacity: 0.7;
-} */
+}
 /* Styles for card-bomb background. -end- */
 
 /* Styles for icons. -start- */
