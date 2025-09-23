@@ -24,8 +24,8 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
     <>
       {showModal && (
         <div className={styles.backdrop} onClick={() => closeModal()}>
-          <div className={styles.bombRed} />
-          <div className={styles.bombLight} />
+          {/* <div className={styles.bombRed} />
+          <div className={styles.bombLight} /> */}
           <div className={styles.modalPosition}>
             <div
               className={styles.modalContainer}
@@ -48,9 +48,9 @@ const Bomb = ({ count }) => {
     <>
       <div className={styles.light}>
         {/* <div className={styles.bombBack} /> */}
-        {/* <div className={styles.bombRed} /> */}
+        <div className={styles.bombRed} />
         {/* <div className={styles.bombRedMask} /> */}
-        {/* <div className={styles.bombLight} /> */}
+        <div className={styles.bombLight} />
         <Image image={bomb} />
       </div>
       <section className={styles.content}>
