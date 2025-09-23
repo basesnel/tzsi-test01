@@ -43,13 +43,18 @@
 
 .bombLight {
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
+  width: 364px;
+  height: 260px;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
   background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: overlay;
-  opacity: 0.21;
+  /* opacity: 0.21; */
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -70,14 +75,25 @@
   }
 }
 
+.bombBack {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /* filter: blur(89px); */
+}
+
 .bombRed {
   position: absolute;
   z-index: -1;
   width: 220px;
   height: 120px;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50%;
   background: rgba(225, 48, 48, 1);
-  filter: blur(55px);
+  filter: blur(89px);
 }
 
 .bombRedMask {

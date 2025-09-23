@@ -92,34 +92,6 @@ const cards = [
   },
   {
     id: 5,
-    image: {
-      label: "Double",
-      wbp: double1xWBP,
-      png: double1xPNG,
-      wbp2x: double2xWBP,
-      png2x: double2xPNG,
-      wbp3x: double3xWBP,
-      png3x: double3xPNG,
-      width: 72,
-      height: 72,
-    },
-  },
-  {
-    id: 6,
-    image: {
-      label: "Bomb",
-      wbp: bomb1xWBP,
-      png: bomb1xPNG,
-      wbp2x: bomb2xWBP,
-      png2x: bomb2xPNG,
-      wbp3x: bomb3xWBP,
-      png3x: bomb3xPNG,
-      width: 88,
-      height: 88,
-    },
-  },
-  {
-    id: 7,
     amount: 1000000,
     image: {
       label: "Cash",
@@ -134,7 +106,21 @@ const cards = [
     },
   },
   {
-    id: 8,
+    id: 6,
+    image: {
+      label: "Double",
+      wbp: double1xWBP,
+      png: double1xPNG,
+      wbp2x: double2xWBP,
+      png2x: double2xPNG,
+      wbp3x: double3xWBP,
+      png3x: double3xPNG,
+      width: 72,
+      height: 72,
+    },
+  },
+  {
+    id: 7,
     image: {
       label: "Zero",
       wbp: zero1xWBP,
@@ -145,6 +131,20 @@ const cards = [
       png3x: zero3xPNG,
       width: 53,
       height: 73,
+    },
+  },
+  {
+    id: 8,
+    image: {
+      label: "Bomb",
+      wbp: bomb1xWBP,
+      png: bomb1xPNG,
+      wbp2x: bomb2xWBP,
+      png2x: bomb2xPNG,
+      wbp3x: bomb3xWBP,
+      png3x: bomb3xPNG,
+      width: 88,
+      height: 88,
     },
   },
   {
