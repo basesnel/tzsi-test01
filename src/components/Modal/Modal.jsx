@@ -83,16 +83,16 @@ const Bomb = ({ count }) => {
 const Stop = ({ count }) => {
   return (
     <>
-      <div className={styles.light}>
-        <div className={styles.stopWhite} />
-        <div className={styles.stopLight} />
-        <Image image={stop} />
-      </div>
       <section className={styles.content}>
         <h2 className={`${styles.title} ${styles.titleOver}`}>Game over!</h2>
         <p className={`${styles.text} ${styles.firstText}`}>
           You've reached the end of this run...
         </p>
+        <div className={styles.light}>
+          <div className={styles.stopWhite} />
+          <div className={styles.stopLight} />
+          <Image image={stop} />
+        </div>
         <figure className={styles.figure}>
           <Image image={cash} />
           <figcaption className={styles.caption}>{count}</figcaption>
