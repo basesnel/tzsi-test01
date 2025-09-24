@@ -22,45 +22,6 @@
   box-sizing: border-box;
 }
 
-.stopLight {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: overlay;
-  opacity: 0.34;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .stopLight {
-    background-image: url("../../assets/modal/backgrounds/modal-light-2x.png");
-  }
-}
-
-@media (min-device-pixel-ratio: 3),
-  (-webkit-min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .stopLight {
-    background-image: url("../../assets/modal/backgrounds/modal-light-3x.png");
-  }
-}
-
-.stopWhite {
-  position: absolute;
-  z-index: -1;
-  width: 220px;
-  height: 120px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(89px);
-}
-
 .content {
   padding: 170px 0 170px;
   display: flex;
@@ -122,7 +83,6 @@
 
 .bombLight {
   position: absolute;
-  /* inset: 0; */
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -147,6 +107,44 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
   .bombLight {
+    background-image: url("../../assets/modal/backgrounds/modal-light-3x.png");
+  }
+}
+
+.stopWhite {
+  position: absolute;
+  z-index: -1;
+  width: 220px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(89px);
+}
+
+.stopLight {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: overlay;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .stopLight {
+    background-image: url("../../assets/modal/backgrounds/modal-light-2x.png");
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .stopLight {
     background-image: url("../../assets/modal/backgrounds/modal-light-3x.png");
   }
 }
