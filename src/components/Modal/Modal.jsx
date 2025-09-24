@@ -43,42 +43,40 @@ const Modal = ({ showModal, setShowModal, gameState, count }) => {
 
 const Bomb = ({ count }) => {
   return (
-    <>
+    <section className={styles.content}>
+      <h2 className={styles.title}>Danger ahead!</h2>
+      <p className={`${styles.text} ${styles.firstText}`}>
+        You're on a Bomb Square! You hit a bomb and lose all rewards from this
+        field...
+      </p>
       <div className={styles.light}>
         <div className={styles.bombRed} />
         <div className={styles.bombLight} />
         <Image image={bomb} />
       </div>
-      <section className={styles.content}>
-        <h2 className={styles.title}>Danger ahead!</h2>
-        <p className={`${styles.text} ${styles.firstText}`}>
-          You're on a Bomb Square! You hit a bomb and lose all rewards from this
-          field...
-        </p>
-        <figure className={styles.figure}>
-          <Image image={cash} />
-          <figcaption className={styles.caption}>{count}</figcaption>
-        </figure>
-        <p className={`${styles.text} ${styles.secondText}`}>
-          ...or defuse it and save your run!
-        </p>
-        <ul className={styles.control}>
-          <li className={styles.item}>
-            <button className={styles.button}>
-              <Image image={buttonBomb} />
-              Take a hit
-            </button>
-          </li>
-          <li className={styles.item}>
-            <button className={`${styles.button} ${styles.secondButton}`}>
-              Defuse for
-              <Image image={buttonDefuse} />
-              49
-            </button>
-          </li>
-        </ul>
-      </section>
-    </>
+      <figure className={styles.figure}>
+        <Image image={cash} />
+        <figcaption className={styles.caption}>{count}</figcaption>
+      </figure>
+      <p className={`${styles.text} ${styles.secondText}`}>
+        ...or defuse it and save your run!
+      </p>
+      <ul className={styles.control}>
+        <li className={styles.item}>
+          <button className={styles.button}>
+            <Image image={buttonBomb} />
+            Take a hit
+          </button>
+        </li>
+        <li className={styles.item}>
+          <button className={`${styles.button} ${styles.secondButton}`}>
+            Defuse for
+            <Image image={buttonDefuse} />
+            49
+          </button>
+        </li>
+      </ul>
+    </section>
   );
 };
 

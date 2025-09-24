@@ -22,55 +22,6 @@
   box-sizing: border-box;
 }
 
-.light {
-  position: absolute;
-  width: 364px;
-  height: 260px;
-  top: 280px;
-  left: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bombLight {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: overlay;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .bombLight {
-    background-image: url("../../assets/modal/backgrounds/modal-light-2x.png");
-  }
-}
-
-@media (min-device-pixel-ratio: 3),
-  (-webkit-min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .bombLight {
-    background-image: url("../../assets/modal/backgrounds/modal-light-3x.png");
-  }
-}
-
-.bombRed {
-  position: absolute;
-  z-index: -1;
-  width: 220px;
-  height: 120px;
-  border-radius: 50%;
-  background: rgba(225, 48, 48, 1);
-  filter: blur(89px);
-}
-
 .stopLight {
   position: absolute;
   inset: 0;
@@ -115,7 +66,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
 }
 
 .title {
@@ -147,6 +97,58 @@
 
 .secondText {
   margin-bottom: 24px;
+}
+
+.light {
+  position: absolute;
+  width: 100%;
+  max-width: 364px;
+  height: 260px;
+  top: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bombRed {
+  position: absolute;
+  z-index: -1;
+  width: 220px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(225, 48, 48, 1);
+  filter: blur(89px);
+}
+
+.bombLight {
+  position: absolute;
+  /* inset: 0; */
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/modal/backgrounds/modal-light-1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: overlay;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .bombLight {
+    background-image: url("../../assets/modal/backgrounds/modal-light-2x.png");
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .bombLight {
+    background-image: url("../../assets/modal/backgrounds/modal-light-3x.png");
+  }
 }
 
 .figure {
