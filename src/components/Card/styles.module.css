@@ -6,20 +6,21 @@
   flex-direction: column;
   height: 100%;
   border-radius: 12px;
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),
+  box-shadow:
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2),
     0px 4px 8px 0px rgba(24, 26, 32, 0.3);
 }
 
 .front {
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 800;
   color: rgba(255, 255, 255, 0.4);
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.01),
     rgba(255, 255, 255, 0.05) 100%
   );
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(8px);
   cursor: pointer;
 }
 
@@ -322,12 +323,6 @@
 /* Styles for card-stop background. -end- */
 
 /* Styles for card-bomb background. -start- */
-/* .bombFirstBG {
-  position: absolute;
-  inset: 0;
-  background: rgba(116, 21, 33, 0.9);
-} */
-
 .bombLight {
   position: absolute;
   top: 50%;
