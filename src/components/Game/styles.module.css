@@ -9,7 +9,7 @@
 
 .purple {
   position: absolute;
-  inset: 0;
+  inset: 0 0 84px 0;
   background-image: radial-gradient(
     102% 100% at 50% 0%,
     rgba(153, 85, 255, 1),
@@ -21,13 +21,13 @@
 
 .purpleLight {
   position: absolute;
-  top: -228px;
+  top: -229px;
   left: 0;
   width: 100%;
-  aspect-ratio: 1.5;
+  height: 280px;
   background-color: #9955ff;
   border-radius: 50%;
-  filter: blur(130px);
+  filter: blur(200px);
   z-index: -1;
 }
 
