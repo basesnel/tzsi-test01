@@ -1,3 +1,5 @@
+@value item from "../Field/styles.module.css";
+
 /* Card styles: front & back. -start- */
 .card {
   display: flex;
@@ -27,6 +29,50 @@
   .front {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+  }
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+  .item:nth-child(-n + 3) .front {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(52, 39, 80, 0.8) 0%,
+        rgba(46, 36, 70, 0.8) 100%
+      );
+  }
+
+  .item:nth-child(n + 4):nth-child(-n + 6) .front {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(45, 35, 69, 0.8) 0%,
+        rgba(39, 33, 59, 0.8) 100%
+      );
+  }
+
+  .item:nth-child(n + 7):nth-child(-n + 9) .front {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(38, 32, 56, 0.8) 0%,
+        rgba(31, 29, 44, 0.8) 100%
+      );
   }
 }
 
