@@ -1,25 +1,20 @@
 .game {
+  position: relative;
   margin: 0 auto;
   padding: 0 16px;
   min-width: 320px;
   max-width: 428px;
-  position: relative;
   overflow: hidden;
-}
-
-.purple {
-  position: absolute;
-  inset: 0 0 84px 0;
   background-image: radial-gradient(
-    102% 100% at 50% 0%,
-    rgba(153, 85, 255, 1),
+    102% 844px at 50% 0%,
+    rgba(153, 85, 255, 0.5),
     rgba(24, 26, 32, 1) 100%
   );
-  opacity: 0.5;
   z-index: -1;
 }
 
-.purpleLight {
+.game::before {
+  content: "";
   position: absolute;
   top: -229px;
   left: 0;
@@ -31,7 +26,8 @@
   z-index: -1;
 }
 
-.stars {
+.game::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -49,7 +45,7 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .stars {
+  .game::after {
     background-image: url("../../assets/game/pattern-2x.png");
   }
 }
@@ -58,7 +54,7 @@
   (-webkit-min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
-  .stars {
+  .game::after {
     background-image: url("../../assets/game/pattern-3x.png");
   }
 }
