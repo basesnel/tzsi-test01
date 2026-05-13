@@ -25,14 +25,14 @@
   cursor: pointer;
 }
 
-/* @supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
+@supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
   .front {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
-} */
+}
 
-@supports (backdrop-filter: blur(8px)) {
+@supports not (backdrop-filter: blur(8px)) {
   .front {
     position: relative;
     overflow: hidden;
