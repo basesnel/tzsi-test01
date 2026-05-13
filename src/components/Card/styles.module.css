@@ -25,14 +25,19 @@
   cursor: pointer;
 }
 
-@supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
+/* @supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
   .front {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
-}
+} */
 
-@supports not (backdrop-filter: blur(8px)) {
+@supports (backdrop-filter: blur(8px)) {
+  .front {
+    position: relative;
+    overflow: hidden;
+  }
+
   .item:nth-child(-n + 3) .front {
     background:
       linear-gradient(
@@ -73,6 +78,45 @@
         rgba(38, 32, 56, 0.8) 0%,
         rgba(31, 29, 44, 0.8) 100%
       );
+  }
+
+  .item .front::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url("../../assets/game/pattern-1x.png");
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    opacity: 0.5;
+  }
+
+  .item:nth-child(1) .front::before {
+    background-position: -44px -48px;
+  }
+
+  .item:nth-child(2) .front::before {
+    background-position: 3px -48px;
+  }
+
+  .item:nth-child(3) .front::before {
+    background-position: -35px -48px;
+  }
+
+  .item:nth-child(4) .front::before {
+    background-position: -44px -423px;
+  }
+
+  .item:nth-child(5) .front::before {
+    background-position: 3px -423px;
+  }
+
+  .item:nth-child(6) .front::before {
+    background-position: -35px -423px;
+  }
+
+  .item:nth-child(n + 7):nth-child(-n + 9) .front::before {
+    background-image: none;
   }
 }
 
