@@ -5,15 +5,25 @@
   min-width: 320px;
   max-width: 428px;
   overflow: hidden;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     102% 844px at 50% 0%,
     rgba(153, 85, 255, 0.5),
     rgba(24, 26, 32, 1) 100%
-  );
+  ); */
 }
 
-.game::before {
-  content: "";
+.bg {
+  position: absolute;
+  inset: 0 0 87px 0;
+  background-image: radial-gradient(
+    102% 100% at 50% 0%,
+    rgba(153, 85, 255, 0.5),
+    rgba(24, 26, 32, 1) 100%
+  );
+  z-index: -1;
+}
+
+.light {
   position: absolute;
   top: -229px;
   left: 0;
@@ -22,10 +32,10 @@
   background-color: #9955ff;
   border-radius: 50%;
   filter: blur(200px);
+  z-index: -1;
 }
 
 .stars {
-  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -36,6 +46,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.05;
+  z-index: -1;
 }
 
 @media (min-device-pixel-ratio: 2),
