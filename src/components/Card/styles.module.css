@@ -166,7 +166,7 @@
   border-radius: 50%;
   transform: translateY(-50%);
   background: rgba(130, 224, 36, 1);
-  filter: blur(20px);
+  filter: blur(16px);
 }
 
 .cashGreenBottom {
@@ -444,7 +444,7 @@
   align-items: center;
   flex-direction: column;
   width: 64%;
-  transform: translateY(-5%);
+  transform: translateY(-4%);
   z-index: 10;
 }
 
