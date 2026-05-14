@@ -43,7 +43,7 @@ const Card = ({
           } else {
             return card;
           }
-        })
+        }),
       );
 
     image.label.toLowerCase() === "zero" &&
@@ -54,7 +54,7 @@ const Card = ({
           } else {
             return card;
           }
-        })
+        }),
       );
 
     setTips(
@@ -64,7 +64,7 @@ const Card = ({
         } else {
           return tip;
         }
-      })
+      }),
     );
   };
 
@@ -101,7 +101,6 @@ const Decor = ({ label }) => {
       return (
         <>
           <div className={styles.cashFirstBG} />
-          {/* <div className={styles.cashYellow} /> */}
           <div className={styles.cashSecondBG} />
           <div className={styles.cashGreenTop} />
           <div className={styles.cashGreenBottom} />
