@@ -38,46 +38,36 @@
     overflow: hidden;
   }
 
-  .item:nth-child(-n + 3) .front {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.05) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(52, 39, 80, 0.8) 0%,
-        rgba(46, 36, 70, 0.8) 100%
-      );
+  .item .front::after {
+    content: "";
+    position: absolute;
+    inset: -16px;
+    filter: blur(18px);
+    z-index: -1;
   }
 
-  .item:nth-child(n + 4):nth-child(-n + 6) .front {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.05) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(45, 35, 69, 0.8) 0%,
-        rgba(39, 33, 59, 0.8) 100%
-      );
+  .item:nth-child(-n + 3) .front::after {
+    background: linear-gradient(
+      180deg,
+      rgba(60, 42, 95, 1) 0%,
+      rgba(56, 41, 87, 1) 100%
+    );
   }
 
-  .item:nth-child(n + 7):nth-child(-n + 9) .front {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.05) 100%
-      ),
-      linear-gradient(
-        180deg,
-        rgba(38, 32, 56, 0.8) 0%,
-        rgba(31, 29, 44, 0.8) 100%
-      );
+  .item:nth-child(n + 4):nth-child(-n + 6) .front::after {
+    background: linear-gradient(
+      180deg,
+      rgba(56, 41, 87, 1) 0%,
+      rgba(47, 37, 72, 1) 100%
+    );
+  }
+
+  .item:nth-child(n + 7):nth-child(-n + 9) .front::after {
+    background: linear-gradient(
+      180deg,
+      rgba(47, 37, 72, 1) 0%,
+      rgba(39, 34, 57, 1) 100%
+    );
   }
 
   .item .front::before {
@@ -85,14 +75,13 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: url("../../assets/game/pattern-1x.png");
-    background-repeat: no-repeat;
+    background-image: url("../../assets/game/stars-1x.png");
     filter: blur(8px);
     opacity: 0.5;
   }
 
   .item:nth-child(1) .front::before {
-    background-position: -44px -48px;
+    background-position: 39px 33px;
   }
 
   .item:nth-child(2) .front::before {
@@ -104,15 +93,18 @@
   }
 
   .item:nth-child(4) .front::before {
-    background-position: -44px -423px;
+    inset: 0 0 85px 0;
+    background-position: 39px -2px;
   }
 
   .item:nth-child(5) .front::before {
-    background-position: 3px -423px;
+    inset: 0 0 85px 0;
+    background-position: 2px -2px;
   }
 
   .item:nth-child(6) .front::before {
-    background-position: -35px -423px;
+    inset: 0 0 85px 0;
+    background-position: 48px -2px;
   }
 
   .item:nth-child(n + 7):nth-child(-n + 9) .front::before {
