@@ -5,11 +5,6 @@
   min-width: 320px;
   max-width: 428px;
   overflow: hidden;
-  /* background-image: radial-gradient(
-    102% 844px at 50% 0%,
-    rgba(153, 85, 255, 0.5),
-    rgba(24, 26, 32, 1) 100%
-  ); */
 }
 
 .bg {
@@ -42,9 +37,7 @@
   width: 104%;
   aspect-ratio: 1;
   transform: translate(-50%, -2%);
-  background-image: url("../../assets/game/pattern-1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../../assets/game/stars-1x.png");
   opacity: 0.05;
   z-index: -1;
 }
@@ -54,7 +47,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .stars {
-    background-image: url("../../assets/game/pattern-2x.png");
+    background-image: url("../../assets/game/stars-2x.png");
   }
 }
 
@@ -63,6 +56,6 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
   .stars {
-    background-image: url("../../assets/game/pattern-3x.png");
+    background-image: url("../../assets/game/stars-3x.png");
   }
 }
