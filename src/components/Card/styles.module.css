@@ -76,6 +76,7 @@
     inset: 0;
     z-index: -1;
     background-image: url("../../assets/game/stars-1x.png");
+    background-size: 84px 84px;
     filter: blur(8px);
     opacity: 0.5;
   }
