@@ -113,8 +113,6 @@ const Decor = ({ label }) => {
       return (
         <>
           <div className={styles.cashFirstBG} />
-          {/* <div className={styles.doubleWhite} /> */}
-          {/* <div className={styles.doubleSecondWhite} /> */}
           <div className={styles.doubleSecondBG} />
           <div className={styles.doubleBlue} />
           <div className={styles.doubleKonfetti} />
