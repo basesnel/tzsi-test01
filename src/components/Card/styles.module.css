@@ -336,7 +336,7 @@
   height: 50%;
   border-radius: 50%;
   background: rgba(255, 214, 0, 1);
-  filter: blur(15px);
+  filter: blur(16px);
   opacity: 0.5;
 }
 
@@ -347,7 +347,7 @@
   height: 50%;
   border-radius: 50%;
   background: rgba(255, 214, 0, 1);
-  filter: blur(15px);
+  filter: blur(16px);
   opacity: 0.5;
 }
 
