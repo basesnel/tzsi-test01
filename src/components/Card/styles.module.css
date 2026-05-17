@@ -437,6 +437,18 @@
   background: rgba(225, 48, 48, 1);
   mix-blend-mode: overlay;
 }
+
+.bombBG {
+  position: absolute;
+  inset: -16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  filter: blur(8px);
+}
+
 /* Styles for card-bomb background. -end- */
 
 /* Styles for icons. -start- */
