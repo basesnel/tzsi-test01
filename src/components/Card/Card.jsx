@@ -144,10 +144,10 @@ const Decor = ({ label }) => {
     case "bomb":
       return (
         <>
+          <div className={styles.bombBG} />
           <div className={styles.bombLight} />
           <div className={styles.bombRed} />
-          <div className={styles.bombBG} />
-          {/* <div className={styles.cashThirdBG} /> */}
+          <div className={styles.cashThirdBG} />
         </>
       );
 
